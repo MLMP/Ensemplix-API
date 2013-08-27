@@ -1,7 +1,7 @@
 Мир
 ==========
 
-### ```json GET /worlds/ ``` 
+### ``` GET /worlds/ ``` 
 
 
 
