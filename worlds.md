@@ -18,8 +18,7 @@
 ``` 
 http://enapi.ru/worlds/
 ```
-
-#### Пример ответа
+#### Пример ответа 
 ```json 
 ["Sandbox","CarnageR4","CogitoR4","HiTech152","Davids152","Magnus152","Theos","DedalR2","AmberR4"]
 ```
