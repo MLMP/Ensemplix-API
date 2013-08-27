@@ -10,6 +10,22 @@
 
 ### ``` GET /worlds/ ``` 
 
+#### Параметры
+
+Параметры не нужны
+
+### Пример запроса
+
+```json 
+http://enapi.ru/worlds/
+```
+
+#### Пример ответа
+
+```json 
+["Sandbox","CarnageR4","CogitoR4","HiTech152","Davids152","Magnus152","Theos","DedalR2","AmberR4"]
+```
+
 
 
 
