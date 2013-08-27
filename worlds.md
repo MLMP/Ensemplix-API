@@ -76,7 +76,11 @@ http://enapi.ru/worlds/blocks/x/521/y/66/z/199/world/Davids152/
 ### Возможные ошибки
 | Ошибка | Пояснение |
 | ------ | --------- |
-| No records found | Записей по указанным координатам нет |
+| No records found. | Записей по указанным координатам нет |
+| Please provide X coordinate. | Необходимо указать координату по оси X. |
+| Please provide Y coordinate. | Необходимо указать координату по оси Y. |
+| Please provide Z coordinate. | Необходимо указать координату по оси Z. |
+| Please provide world. | Необходимо указать игровой мир. |
 
 
 
