@@ -20,7 +20,7 @@ http://enapi.ru/worlds/
 ```
 ### Пример ответа 
 ```json 
-{"worlds":
+{"worlds":{
     "Sandbox",
     "CarnageR4",
     "CogitoR4",
@@ -29,7 +29,7 @@ http://enapi.ru/worlds/
     "Magnus152",
     "Theos",
     "DedalR2",
-    "AmberR4"
+    "AmberR4"}
 }
 ```
 
@@ -45,7 +45,7 @@ http://enapi.ru/worlds/blocks/x/521/y/66/z/199/world/Davids152/
 ```
 ### Пример ответа 
 ```json 
-{"blocks":
+{"blocks":{
     "player":"serg_next12",
     "status": "1",
     "id":"1","data":"0",
