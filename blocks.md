@@ -21,7 +21,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/blocks/info/x/521/y/66/z/199/world/Davids152/
+http://enapi.ru/2.0/blocks/info/x/521/y/66/z/199/world/Davids152/
 ```
 ### Пример ответа 
 ```json 
