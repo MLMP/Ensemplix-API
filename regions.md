@@ -259,6 +259,17 @@ http://enapi.ru/regions/player/ensiriuswOw/
 | snow-melt | Отключает таяние снега. |
 | pistons  | Включает поршни. |
 
+## Описание параметров size
+Регион состоит из 2-ух точек.
+[alt-text][image]
+[image]:http://ensemplix.ru/images/articles/guard0.png
+
+| Параметры | Пояснение |
+| --------- | --------- |
+| minX      | . |
+| joined    | Время в unix timestamp когда игрок вступил в клан. |
+| expirence | Количество опыта у игрока, которое он вносит в клан. |
+
 
 
 
