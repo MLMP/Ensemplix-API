@@ -8,7 +8,7 @@
 | [GET /warps/location/](warps.md#get-warpslocation) | Получение информации о ближайший варпах. | - |
 | [GET /warps/player/](warps.md#get-warpsplayer) | Варпы игрока. | - |
 
-## ``` GET /warp/ ``` 
+## ``` GET /warps/info/ ``` 
 Информация о варпе.
 
 ### Параметры запроса
@@ -21,7 +21,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/warp/name/shop/world/Sandbox/
+http://enapi.ru/warp/info/shop/world/Sandbox/
 ```
 ### Пример ответа 
 ```json 
