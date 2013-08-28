@@ -77,7 +77,7 @@ http://enapi.ru/2.0/server/web/
            "Steb",
            "dosser",
            "qw33"
-    }
+    },
     "total":"122"
     }
 }
