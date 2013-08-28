@@ -78,7 +78,7 @@ http://enapi.ru/2.0/mail/player/token/a43jbvc78ag8765/
 | text      | Обязательно.  | Текст письма. |
 
 ```json 
-{"success:"1"}
+{"success":"1"}
 ```
 
 ### Пояснение параметров ответа
