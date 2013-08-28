@@ -52,7 +52,7 @@ http://enapi.ru/blocks/x/521/y/66/z/199/world/Davids152/
 | Please provide Z coordinate. | Необходимо указать координату по оси Z. |
 | Please provide world. | Необходимо указать игровой мир. |
 
-
+## ``` GET /blocks/player/ ``` 
 
 
 
