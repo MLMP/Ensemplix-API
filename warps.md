@@ -81,7 +81,7 @@ http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
         "z":"100",
         "created":"1377672685",
         "greeting":"Добро пожаловать в Shop!"
-    }
+    },
     "warp":{
         "name":"spawn",
         "owner":"ensiriuswOw",
