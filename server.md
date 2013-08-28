@@ -3,11 +3,11 @@
 
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /server/game/](server.md) | Информация о игровых серверах. | - |
-| [GET /server/web/](server.md) | Информация о посетителях сайта. | - |
-| [GET /server/events/](server.md) | События за последние время на сервере. | - |
-| [GET /server/stats/](server.md) | Различная статистика сервера. | - |
-| [GET /server/bans/](server.md) | Список забаненных игроков. | - |
+| [GET /server/game/](server.md#get-servergame) | Информация о игровых серверах. | - |
+| [GET /server/web/](server.md#get-serverweb) | Информация о посетителях сайта. | - |
+| [GET /server/events/](server.md#get-serverevents) | События за последние время на сервере. | - |
+| [GET /server/stats/](server.md#get-serverstats) | Различная статистика сервера. | - |
+| [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
 
 ## ``` GET /server/game/ ``` 
 Информация о игровых серверах. Обновление информации о статусе и игроках происходит раз в минуту.
