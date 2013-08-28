@@ -31,14 +31,14 @@ http://enapi.ru/mail/player/token/a43jbvc78ag8765/
       "mail": {
         "to":"dosser",
         "from":"Информатор",
-        "header":"Получение 250 энсов"
+        "header":"Получение 250 энсов",
         "created":"1377628970",
         "read":"1"
       },
       "mail": {
         "to":"dosser",
         "from":"Информатор",
-        "header":"Получение 500 энсов"
+        "header":"Получение 500 энсов",
         "created":"1377629570",
         "read":"1"
       }
