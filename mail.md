@@ -124,6 +124,12 @@ http://enapi.ru/2.0/mail/delete/
 {"success":"1"}
 ```
 
+### Возможные ошибки
+| Ошибка | Пояснение |
+| ------ | --------- |
+| Please provide token. | Необходимо указать OAuth токен. |
+| Incorrect token. | Неправильный OAuth токен. |
+| Message not found. | Не найдено писем с таким иднификатором. |
 
 
 
