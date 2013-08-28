@@ -29,8 +29,15 @@ http://enapi.ru/regions/info/spawn/
 ### Пример ответа 
 ```json 
 {"region":{
-    "min":"-35,4,-344",
-    "max":"-22,114,-335",
+    "size":{
+         "minX":"-35",
+         "minY":"44",
+         "minZ":"-344",
+         "maxX":"-22",
+         "maxY":"114",
+         "maxZ":"-335",
+         "volume":"500000"
+    }
     "owners": {
           "V1TbOK",
           "f1n",
