@@ -261,8 +261,8 @@ http://enapi.ru/regions/player/ensiriuswOw/
 
 ## Описание параметров size
 Регион состоит из 2-ух точек.
-[!alt-text][image]
-[image]:http://ensemplix.ru/images/articles/guard0.png
+![alt text][logo]
+[logo]: http://ensemplix.ru/images/articles/guard0.png
 
 | Параметры | Пояснение |
 | --------- | --------- |
