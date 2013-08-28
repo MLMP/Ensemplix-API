@@ -22,7 +22,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/regions/info/spawn4/
+http://enapi.ru/2.0/regions/info/spawn4/
 ```
 
 ### Пример ответа 
@@ -85,7 +85,7 @@ http://enapi.ru/regions/info/spawn4/
 Возвращает список регионов по поисковому запросу.
 ### Пример запроса
 ``` 
-http://enapi.ru/regions/search/spawn/
+http://enapi.ru/2.0/regions/search/spawn/
 ```
 ### Параметры запроса
 
@@ -165,7 +165,7 @@ http://enapi.ru/regions/search/spawn/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/regions/location/x/0/y/0/z/0/world/HiTech152/
+http://enapi.ru/2.0/regions/location/x/0/y/0/z/0/world/HiTech152/
 ```
 ### Пример ответа 
 ```json 
@@ -242,7 +242,7 @@ http://enapi.ru/regions/location/x/0/y/0/z/0/world/HiTech152/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/regions/player/ensiriuswOw/
+http://enapi.ru/2.0/regions/player/ensiriuswOw/
 ```
 
 ### Пример ответа 
