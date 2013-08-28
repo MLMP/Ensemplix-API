@@ -223,7 +223,15 @@ http://enapi.ru/warps/player/ensiriuswOw/
 | Please provide player. | Необходимо указать игрока. |
 | Player not exists. | Указанный игрок не существует. |
 
+## ``` PUT /warp/create ``` 
+Создание варпа. 
 
+##### Данный метод требует наличие OAuth авторизации.
+
+### Пример запроса
+``` 
+http://enapi.ru/warps/create/
+```
 
 
 
