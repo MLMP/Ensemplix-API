@@ -35,7 +35,6 @@ http://enapi.ru/warp/name/shop/world/Sandbox/
     "greeting":"§3[От Warp Shop]: §c Внимание! У нас Распродажа Алмазов и Железа!"}
 }
 ```
-
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
@@ -67,7 +66,6 @@ http://enapi.ru/warp/name/shop/world/Sandbox/
 | z         | Обязательно.  | Координата по оси Z. |
 | world     | Обязательно.  | Игровой мир. |
 
-
 ### Пример запроса
 ``` 
 http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
@@ -75,15 +73,26 @@ http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
 ### Пример ответа 
 ```json 
 {"warps":{
-    "warp":"shop",
-    "owner":"ensiriuswOw",
-    "x":"-10",
-    "y":"65",
-    "z":"100",
-    "greeting":"Добро пожаловать в Shop!"}
+    "warp":{
+        "name":"shop",
+        "owner":"ensiriuswOw",
+        "x":"-10",
+        "y":"65",
+        "z":"100",
+        "created":"1377672685",
+        "greeting":"Добро пожаловать в Shop!"|
+    }
+    "warp":{
+        "name":"spawn",
+        "owner":"ensiriuswOw",
+        "x":"0",
+        "y":"65",
+        "z":"0",
+        "created":"1377675685",
+        "greeting":"Добро пожаловать на спавн!"|
+    }
 }
 ```
-
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
@@ -92,6 +101,7 @@ http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
 | x         | Координата по оси X расположения варпа. |
 | y         | Координата по оси Y расположения варпа. |
 | z         | Координата по оси Z расположения варпа. |
+| created   | Время создания варпа в unit timestamp. |
 | greeting  | Приветствие варпа при телепортации к нему. |
 
 ### Возможные ошибки
