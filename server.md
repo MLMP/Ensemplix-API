@@ -4,7 +4,7 @@
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /server/game/](server.md) | Информация о игровых серверах. | - |
-| [GET /server/web/](server.md) | Онлайн на сайте. | - |
+| [GET /server/web/](server.md) | Информация о посетителях сайта. | - |
 | [GET /server/events/](server.md) | События за последние время на сервере. | - |
 | [GET /server/stats/](server.md) | Различная статистика сервера. | - |
 | [GET /server/bans/](server.md) | Список забаненных игроков. | - |
@@ -18,11 +18,11 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/server/online/game/
+http://enapi.ru/2.0/server/game/
 ```
 ### Пример ответа 
 ```json 
-{"servers":{
+{"game":{
     "server":{
          "name":"Sandbox",
          "online":"1",
@@ -55,9 +55,39 @@ http://enapi.ru/2.0/server/online/game/
 | version   | Версия сервера. |
 
 
+## ``` GET /server/web/ ``` 
+Информация о посетителях сайта
 
+### Параметры
 
+Параметры не нужны.
 
+### Пример запроса
+``` 
+http://enapi.ru/2.0/server/web/
+```
+### Пример ответа 
+```json 
+{"web":{
+    "guests":"49",
+    "online":"73",
+    "players":{
+           "ensiriuswOw",
+           "ensiriusNyashka",
+           "Steb",
+           "dosser",
+           "qw33"
+    }
+    "total":"122"
+}
+```
+### Пояснение параметров ответа
+| Параметры | Пояснение |
+| --------- | --------- |
+| guests    | Количество гостей на сайте. |
+| online    | Количество игроков на сайте. |
+| players   | Список игроков на сайте. |
+| total     | Всего посетителей на сайте. |
 
 
 
