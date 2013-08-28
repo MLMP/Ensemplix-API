@@ -53,7 +53,7 @@ http://enapi.ru/warp/name/shop/world/Sandbox/
 | Please provide world. | Необходимо указать игровой мир. |
 
 ## ``` GET /warps/search/ ``` 
-Поиск варпов по названию.
+Поиск варпов по полному или частичному названию варпа.
 
 ### Параметры запроса
 
@@ -169,7 +169,7 @@ http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
 | Radius to big. | Максимальный радиус поиска 1000 блоков. |
 
 ## ``` GET /warps/player/ ``` 
-Поиск варпов по названию.
+Список варпов у игрока.
 
 ### Параметры запроса
 
@@ -221,6 +221,7 @@ http://enapi.ru/warps/player/ensiriuswOw/
 | ------ | --------- |
 | No warps found. | Не были найдены записи о варпах у игрока. |
 | Please provide player. | Необходимо указать игрока. |
+| Player not exists. | Указанный игрок не существует. |
 
 
 
