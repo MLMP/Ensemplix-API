@@ -37,7 +37,7 @@ http://enapi.ru/regions/info/spawn/
          "maxY":"114",
          "maxZ":"-335",
          "volume":"500000"
-    }
+    },
     "owners": {
           "V1TbOK",
           "f1n",
@@ -52,7 +52,7 @@ http://enapi.ru/regions/info/spawn/
           "pistons",
           "potions",
           "no-pvp"
-    }
+    },
     "priority":"0",
     "parent":"spawn",
     "childs":{
