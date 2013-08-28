@@ -30,7 +30,7 @@ http://enapi.ru/blocks/x/521/y/66/z/199/world/Davids152/
     "status": "1",
     "id":"1",
     "data":"0",
-    "time":"1377670832"}
+    "modifed":"1377670832"}
 }
 ```
 
@@ -41,7 +41,7 @@ http://enapi.ru/blocks/x/521/y/66/z/199/world/Davids152/
 | status    | 0 - сломали блок, 1 - поставили блок. |
 | id        | Id блока. |
 | data      | Мета-данная блока. |
-| time      | Время когда был изменен блок в unix timestamp формате. |
+| modifed   | Время когда был изменен блок в unix timestamp формате. |
 
 ### Возможные ошибки
 | Ошибка | Пояснение |
