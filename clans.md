@@ -44,6 +44,56 @@ http://enapi.ru/clans/
 | leader    | Лидер клана. |
 | members   | Количество человек состоящих в клане. |
 
+## ``` GET /clan/ ``` 
+Возвращает подробную информацию о клане по его id.
+
+### Параметры
+
+| Параметры | Пояснение |
+| --------- | --------- |
+| Id клана  | Уникальный индификатор клана. |
+
+### Пример запроса
+``` 
+http://enapi.ru/clan/
+```
+### Пример ответа 
+```json 
+{"clan":{
+     "name":"Yakuza",
+     "leader":"IPalexIP",
+     "greeting":"Наша группа: http://vk.com/clan_yakuza_minecraft",
+     "clan_expirence":"57100";
+     "logo":"Yakuza_logo.jpg",
+     "members":"35"
+     "clan_members":{
+        "member":{
+          "player":"IPalexIP",
+          "joined":"1377671224",
+          "expirence":"100"
+          }
+        "member":{
+          "player":"Falgroth",
+          "joined":"1377671024",
+          "expirence":"500"
+          }
+        "member":{
+          "player":"DragonCHICK",
+          "joined":"1377671024",
+          "expirence":"56500"
+          } 
+     }
+}
+```
+### Пояснение параметров ответа
+| Параметры | Пояснение |
+| --------- | --------- |
+| id        | Id клана. |
+| name      | Название клана. |
+| leader    | Лидер клана. |
+| members   | Количество человек состоящих в клане. |
+
+
 
 
 
