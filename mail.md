@@ -22,7 +22,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/mail/player/token/a43jbvc78ag8765/
+http://enapi.ru/2.0/mail/player/token/a43jbvc78ag8765/
 ```
 
 ### Пример ответа 
