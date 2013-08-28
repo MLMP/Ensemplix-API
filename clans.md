@@ -67,20 +67,20 @@ http://enapi.ru/clan/
      "logo":"Yakuza_logo.jpg",
      "members":"35",
      "clan_members":{
-        "member":{
-          "player":"IPalexIP",
-          "joined":"1377671224",
-          "expirence":"100"
-          }
-        "member":{
-          "player":"Falgroth",
-          "joined":"1377671024",
-          "expirence":"500"
-          }
-        "member":{
-          "player":"DragonCHICK",
-          "joined":"1377671024",
-          "expirence":"56500"
+          "member":{
+              "player":"IPalexIP",
+              "joined":"1377671224",
+              "expirence":"100"
+          },
+          "member":{
+              "player":"Falgroth",
+              "joined":"1377671024",
+              "expirence":"500"
+          },
+          "member":{
+              "player":"DragonCHICK",
+              "joined":"1377671024",
+              "expirence":"56500"
           } 
      }
 }
