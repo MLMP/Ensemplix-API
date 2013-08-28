@@ -25,7 +25,7 @@ http://enapi.ru/2.0/server/online/game/
 {"servers":{
     "server":{
          "name":"Sandbox",
-         "online","1",
+         "online":"1",
          "players":"81",
          "maximum":"100",
          "ip":"sv1.ensemplix.ru",
