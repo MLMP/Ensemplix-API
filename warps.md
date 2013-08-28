@@ -80,7 +80,7 @@ http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
         "y":"65",
         "z":"100",
         "created":"1377672685",
-        "greeting":"Добро пожаловать в Shop!"|
+        "greeting":"Добро пожаловать в Shop!"
     }
     "warp":{
         "name":"spawn",
@@ -89,7 +89,7 @@ http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
         "y":"65",
         "z":"0",
         "created":"1377675685",
-        "greeting":"Добро пожаловать на спавн!"|
+        "greeting":"Добро пожаловать на спавн!"
     }
 }
 ```
