@@ -64,7 +64,7 @@ http://enapi.ru/clan/
      "leader":"IPalexIP",
      "greeting":"Наша группа: http://vk.com/clan_yakuza_minecraft",
      "clan_expirence":"57100",
-     "logo":"Yakuza_logo.jpg",
+     "logo":"http://ensemplix.ru/images/clans/Yakuza_logo.jpg",
      "members":"35",
      "clan_members":{
           "member":{
@@ -88,10 +88,19 @@ http://enapi.ru/clan/
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
-| id        | Id клана. |
 | name      | Название клана. |
 | leader    | Лидер клана. |
+| greeting  | Приветствие клана. |
+| logo      | Ссылка на логотип клана. |
 | members   | Количество человек состоящих в клане. |
+| clan_members | Список членов клана. |
+
+| Параметры | Пояснение |
+| --------- | --------- |
+| player    | Ник игрока. |
+| joined    | Время в unix timestamp когда игрок вступил в клан. |
+| expirence | Количество опыта у игрока, которое он вносит в клан. |
+
 
 
 
