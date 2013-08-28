@@ -75,7 +75,7 @@ http://enapi.ru/warps/search/name/shop/
         "y":"65",
         "z":"100",
         "created":"1377672685",
-        "greeting":"Добро пожаловать в Shop!"
+        "greeting":"Добро пожаловать в Shop!",
         "world":"HiTech152"
     },
     "warp":{
@@ -99,6 +99,7 @@ http://enapi.ru/warps/search/name/shop/
 | z         | Координата по оси Z расположения варпа. |
 | created   | Время создания варпа в unit timestamp. |
 | greeting  | Приветствие варпа при телепортации к нему. |
+| world     | Игровой мир. |
 
 ### Возможные ошибки
 | Ошибка | Пояснение |
