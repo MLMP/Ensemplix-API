@@ -31,7 +31,7 @@ http://enapi.ru/2.0/server/online/game/
          "ip":"sv1.ensemplix.ru",
          "port":"25565",
          "version":"1.5.2"
-    }
+    },
     "server":{
          "name":"Cogito",
          "online":"1",
