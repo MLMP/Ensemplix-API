@@ -24,13 +24,13 @@ http://enapi.ru/clans/
     "clan":{
        "id":"1",
        "name":"Ensemplix",
-       "leader:"eNsirius",
+       "leader":"eNsirius",
        "members":"35"
        },
     "clan":{
        "id":"2",
        "name":"Hearth of Gold",
-       "leader:"Steb",
+       "leader":"Steb",
        "members":"76"
        }
     }
