@@ -137,26 +137,11 @@ http://enapi.ru/2.0/server/stats/
 ### Пример ответа 
 ```json 
 {"stats":{
-         "stat":{
-            "played",
-            "6546456546"
-         },
-         "stat":{
-            "expirence",
-            "4354379097"
-         },  
-         "stat":{
-            "commands",
-            "243543397"
-         },
-         "stat":{
-            "chat",
-            "43543797"
-         },
-         "stat":{
-            "coins",
-            "43543797"
-         },          
+      "played":"6546456546",
+      "expirence":"4354379097",
+      "commands":"243543397",
+      "chat":"43543797",
+      "coins":"43543797"
       }
 }
 ```
