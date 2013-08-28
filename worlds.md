@@ -5,11 +5,12 @@
 | ----- | -------- |:---:|
 | [GET /worlds/](worlds.md) | Названия миров. | - |
 | [GET /worlds/blocks/](worlds.md) | Изменения блоков в мире на указанных координатах. | - |
-| [GET /worlds/warps/](worlds.md) | Информация о варпе. | - |
-
+| [GET /worlds/warp/](worlds.md) | Информация о варпе. | - |
+| [GET /worlds/warps/search/](worlds.md) | Поиск варпов по названию. | - |
+| [GET /worlds/warps/location/](worlds.md) | Получение информации о ближайший варпах. | - |
 | [GET /worlds/region/](worlds.md) | Информация о регионе. | - |
-| [GET /worlds/warps/search/](worlds.md) | Получение информации о ближайший варпах. | - |
-| [GET /worlds/regions/search](worlds.md) | Получение информации о ближайший регионах. | - |
+| [GET /worlds/regions/search/](worlds.md) | Поиск регионов по названию. | - |
+| [GET /worlds/regions/location/](worlds.md) | Получение информации о ближайший регионах. | - |
 
 ## ``` GET /worlds/ ``` 
 Список миров. Название миров отличается от названия серверов и может содержать дополнительные цифры или буквы.
