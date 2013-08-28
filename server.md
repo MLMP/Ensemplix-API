@@ -107,11 +107,11 @@ http://enapi.ru/2.0/server/events/
 ```json 
 {"events":{
          "event":{
-            "message":"dosser был исключен из состава модераторов"
+            "message":"dosser был исключен из состава модераторов",
             "created":"1377705038"
          },
          "event":{
-            "message":"SatoAV приобрел Super-Vip"
+            "message":"SatoAV приобрел Super-Vip",
             "created":"1377705008"
          }
       }
