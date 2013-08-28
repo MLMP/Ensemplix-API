@@ -53,6 +53,13 @@ http://enapi.ru/mail/player/token/a43jbvc78ag8765/
 | created   | Время в unix timestamp когда было отправлено письм. |
 | read      | Прочитали ли письмо. 0 - не прочитали. 1 - прочитали. |
 
+### Возможные ошибки
+| Ошибка | Пояснение |
+| ------ | --------- |
+| Messages not found. | Не найдено писем для игрока. |
+| Please provide token. | Необходимо указать OAuth токен. |
+| Incorrect token. | Неправильный OAuth токен. |
+
 
 
 
