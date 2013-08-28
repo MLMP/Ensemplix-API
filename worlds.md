@@ -15,7 +15,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/worlds/
+http://enapi.ru/2.0/worlds/
 ```
 ### Пример ответа 
 ```json 
@@ -49,7 +49,7 @@ http://enapi.ru/worlds/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/worlds/region/spawn/Sandbox/
+http://enapi.ru/2.0/worlds/region/spawn/Sandbox/
 ```
 ### Пример ответа 
 ```json 
