@@ -26,7 +26,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/worlds/warps/x/0/y/0/z/0/world/HiTech152/
+http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
 ```
 ### Пример ответа 
 ```json 
