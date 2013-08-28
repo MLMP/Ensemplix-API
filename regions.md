@@ -70,7 +70,7 @@ http://enapi.ru/regions/info/spawn4/
 | owners    | Списоок игроков, которые владеют регионам. |
 | members   | Список жителей в регионе. |
 | flags     | Список [флагов](regions.md#%D0%A4%D0%BB%D0%B0%D0%B3%D0%B8) в регионе. |
-| priority  | Приоритете региона. |
+| priority  | Приоритет региона. |
 | parent    | Глобальный регион. |
 | childs    | Локальные регионы. |
 | created   | Время создания региона в unix timestamp. |
