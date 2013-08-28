@@ -5,7 +5,7 @@
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /clans/](clans.md#get-clans) | Список кланов на сервере. | - |
-| [GET /clan/](clans.md#get-clan) | Информация о клане. | - |
+| [GET /clans/info/](clans.md#get-clan) | Информация о клане. | - |
 
 
 ## ``` GET /clans/ ``` 
@@ -45,7 +45,7 @@ http://enapi.ru/clans/
 | leader    | Лидер клана. |
 | members   | Количество человек состоящих в клане. |
 
-## ``` GET /clan/ ``` 
+## ``` GET /clans/info/ ``` 
 Возвращает подробную информацию о клане по его id.
 
 ### Параметры
@@ -56,7 +56,7 @@ http://enapi.ru/clans/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/clan/id/35/
+http://enapi.ru/clans/info/35/
 ```
 ### Пример ответа 
 ```json 
