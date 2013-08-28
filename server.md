@@ -19,7 +19,7 @@
 ### Пример запроса
 ``` 
 http://enapi.ru/2.0/server/online/game/
-
+```
 ### Пример ответа 
 ```json 
 {"servers":{
