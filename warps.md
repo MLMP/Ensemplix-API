@@ -3,7 +3,7 @@
 
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /warp/](warp.md) | Информация о варпе. | - |
+| [GET /warp/](warps.md#get-warp.md) | Информация о варпе. | - |
 | [GET /warps/search/](warp.md) | Поиск варпов по названию. | - |
 | [GET /warps/location/](warps.md#get-warpslocation) | Получение информации о ближайший варпах. | - |
 | [GET /warps/player/](warp.md) | Варпы игрока. | - |
