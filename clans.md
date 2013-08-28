@@ -63,7 +63,7 @@ http://enapi.ru/clan/
      "name":"Yakuza",
      "leader":"IPalexIP",
      "greeting":"Наша группа: http://vk.com/clan_yakuza_minecraft",
-     "clan_expirence":"57100";
+     "clan_expirence":"57100",
      "logo":"Yakuza_logo.jpg",
      "members":"35"
      "clan_members":{
