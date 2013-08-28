@@ -17,7 +17,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/clans/
+http://enapi.ru/2.0/clans/
 ```
 ### Пример ответа 
 ```json 
@@ -56,7 +56,7 @@ http://enapi.ru/clans/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/clans/info/35/
+http://enapi.ru/2.0/clans/info/35/
 ```
 ### Пример ответа 
 ```json 
