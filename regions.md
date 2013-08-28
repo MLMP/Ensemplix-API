@@ -59,7 +59,7 @@ http://enapi.ru/regions/info/spawn/
           "spawn1",
           "spawn2",
           "spawn3"
-    }
+    },
     "created":"1377672685"}
 }
 ```
