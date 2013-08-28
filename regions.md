@@ -82,6 +82,15 @@ http://enapi.ru/regions/info/spawn4/
 | Please provide region. | Необходимо указать регион. |
 | Please provide world. | Необходимо указать игровой мир. |
 
+## ``` GET /regions/search/ ``` 
+Возвращает список регионов по поисковому запросу.
+### Пример запроса
+``` 
+http://enapi.ru/regions/search/spawn/
+```
+
+
+
 
 ## Флаги
 
