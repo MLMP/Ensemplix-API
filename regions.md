@@ -78,8 +78,8 @@ http://enapi.ru/regions/info/spawn4/
 ### Возможные ошибки
 | Ошибка | Пояснение |
 | ------ | --------- |
-| No warps found. | В радиусе указанных координат нет варпов. |
-| Please provide warp. | Необходимо указать варп. |
+| Region not found. | Регион с таким названиям не найден. |
+| Please provide region. | Необходимо указать регион. |
 | Please provide world. | Необходимо указать игровой мир. |
 
 
