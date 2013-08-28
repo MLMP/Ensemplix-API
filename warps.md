@@ -21,7 +21,7 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/warp/info/shop/world/Sandbox/
+http://enapi.ru/2.0/warps/info/shop/world/Sandbox/
 ```
 ### Пример ответа 
 ```json 
@@ -62,7 +62,7 @@ http://enapi.ru/warp/info/shop/world/Sandbox/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/warps/search/sho/
+http://enapi.ru/2.0/warps/search/sho/
 ```
 ### Пример ответа 
 ```json 
@@ -121,7 +121,7 @@ http://enapi.ru/warps/search/sho/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
+http://enapi.ru/2.0/warps/location/x/0/y/0/z/0/world/HiTech152/
 ```
 ### Пример ответа 
 ```json 
@@ -178,7 +178,7 @@ http://enapi.ru/warps/location/x/0/y/0/z/0/world/HiTech152/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/warps/player/ensiriuswOw/
+http://enapi.ru/2.0/warps/player/ensiriuswOw/
 ```
 ### Пример ответа 
 ```json 
