@@ -28,8 +28,8 @@ http://enapi.ru/regions/info/spawn4/
 
 ### Пример ответа 
 ```json 
-{"region":{
-    "size":{
+{"region": {
+    "size": {
          "minX":"-35",
          "minY":"44",
          "minZ":"-344",
@@ -38,29 +38,29 @@ http://enapi.ru/regions/info/spawn4/
          "maxZ":"-335",
          "volume":"500000"
     },
-    "owners": {
+    "owners": [
           "V1TbOK",
           "f1n",
           "dj_koks"
-    },
-    "members": {
+    ],
+    "members": [
           "ensiriuswOw",
           "Steb",
           "ensiriusNyashka"
-    },
-    "flags": {
+    ],
+    "flags": [
           "pistons",
           "potions",
           "no-pvp"
-    },
-    "priority":"0",
-    "parent":"spawn",
-    "childs":{
+    ],
+    "priority": "0",
+    "parent": "spawn",
+    "childs": [
           "spawn1",
           "spawn2",
           "spawn3"
-    },
-    "created":"1377672685"}
+    ],
+    "created": "1377672685"}
 }
 ```
 ### Пояснение параметров ответа
