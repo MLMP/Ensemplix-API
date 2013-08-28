@@ -5,7 +5,7 @@
 | ----- | -------- |:---:|
 | [GET /warp/](warp.md) | Информация о варпе. | - |
 | [GET /warp/search/](warp.md) | Поиск варпов по названию. | - |
-| [GET /warp/location/](warps.md#get-warpssearch.md) | Получение информации о ближайший варпах. | - |
+| [GET /warp/location/](warps.md#get-warpslocation.md) | Получение информации о ближайший варпах. | - |
 | [GET /warp/player/](warp.md) | Варпы игрока. | - |
 | [PUT /warp/create/](warp.md) | Покупка варпа. | + |
 
