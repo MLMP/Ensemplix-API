@@ -107,11 +107,11 @@ http://enapi.ru/worlds/warps/x/0/y/0/z/0/world/HiTech152/
 ### Пример ответа 
 ```json 
 {"warps":{
-    "warp":"shop"
+    "warp":"shop",
     "owner":"ensiriuswOw",
     "x":"-10",
     "y":"65",
-    "z":"100"
+    "z":"100",
     "greeting":"Добро пожаловать в Shop!"}
 }
 ```
@@ -124,7 +124,7 @@ http://enapi.ru/worlds/warps/x/0/y/0/z/0/world/HiTech152/
 | x         | Координата по оси X расположения варпа. |
 | y         | Координата по оси Y расположения варпа. |
 | z         | Координата по оси Z расположения варпа. |
-| greeting  | Приветствие варпа при телепортации к нему |
+| greeting  | Приветствие варпа при телепортации к нему. |
 
 ### Возможные ошибки
 | Ошибка | Пояснение |
@@ -134,6 +134,8 @@ http://enapi.ru/worlds/warps/x/0/y/0/z/0/world/HiTech152/
 | Please provide Y coordinate. | Необходимо указать координату по оси Y. |
 | Please provide Z coordinate. | Необходимо указать координату по оси Z. |
 | Please provide world. | Необходимо указать игровой мир. |
+| Radius to small | Минимальный радиус поиска 30 блоков. |
+| Radius to big | Максимальный радиус поиска 1000 блоков. |
 
 
 
