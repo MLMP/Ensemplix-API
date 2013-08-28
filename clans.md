@@ -21,13 +21,13 @@ http://enapi.ru/clans/
 ### Пример ответа 
 ```json 
 {"clans":{
-    "clan:{
+    "clan":{
        "id":"1",
        "name":"Ensemplix",
        "leader:"eNsirius",
        "members":"35"
        },
-    "clan:{
+    "clan":{
        "id":"2",
        "name":"Hearth of Gold",
        "leader:"Steb",
