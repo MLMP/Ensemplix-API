@@ -5,7 +5,7 @@
 | [GET /player/info/](player.md) | Информация о игроке. | - |
 | [PUT /player/online/](player.md) | Устанавливает статус игрока в онлайн режим на 15 минут. | + |
 | [GET /player/violations/](player.md) | Информация о нарушениях игрока. | - |
-| [GET /player/search/](player.md) | Поиск игрока. | - |
+| [POST /player/search/](player.md) | Поиск игрока. | - |
 | [GET /player/chat/](player.md) | История сообщений игрока в чате. | + |
 | [GET /player/commands/](player.md) | История вызовов игровых команд | + |
 
@@ -136,4 +136,43 @@ http://enapi.ru/2.0/player/violations/ensiriuswOw/
 | operation | Тип операции. Бан, Разбан. Мут, Размут. |
 | reason    | Для бана или мута указывается причина. |
 | punish_time | Для бана или мута указывается время наказания. -1 у бана означает, что игрок был забанен навсегда. |
+
+## ``` POST /player/search/ ``` 
+Поиск игроков.
+### Параметры запроса
+| Параметры | Необходимость | Пояснение |
+| --------- | ------------- | --------- |
+| search    | Обязательно.  | Поисквой запроос. |
+### Пример запроса
+``` 
+http://enapi.ru/2.0/player/search/
+
+POST search ensi
+```
+### Пример ответа 
+```json 
+{"found":true,
+ "players":{
+      "ensi",
+      "Ensidia",
+      "ensientminer",
+      "Ensiferum",
+      "ENSIiK",
+      "EnsiK",
+      "ENSIK123",
+      "EnsikCool",
+      "ensil",
+      "Ensiman20010",
+      "Ensin",
+      "Ensininka",
+      "ensiq",
+      "ensiq41",
+      "ensirius"
+    }
+}
+```
+
+
+
+
 
