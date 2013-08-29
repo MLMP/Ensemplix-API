@@ -89,6 +89,8 @@ http://enapi.ru/2.0/player/info/ensiriuswOw/
 
 ### Пример запроса
 ``` 
+PUT token fds88asfhj
+
 http://enapi.ru/2.0/player/online/
 ```
 ### Пример ответа 
@@ -144,14 +146,14 @@ http://enapi.ru/2.0/player/violations/ensiriuswOw/
 | --------- | ------------- | --------- |
 | search    | Обязательно.  | Поисквой запроос. |
 ### Пример запроса
-``` 
-http://enapi.ru/2.0/player/search/
-
+```
 POST search ensi
+
+http://enapi.ru/2.0/player/search/
 ```
 ### Пример ответа 
 ```json 
-{"found":true,
+{"found":1,
  "players":{
       "ensi",
       "Ensidia",
