@@ -38,8 +38,8 @@ http://enapi.ru/2.0/player/info/ensiriuswOw/
         "chat_color":"a",
         "name_color":"c",
         "donate_till":"1369652283",
-        "muted","1369652283",
-        "banned","1369652283"
+        "muted":"1369652283",
+        "banned":"1369652283"
       }
 }
 ```
