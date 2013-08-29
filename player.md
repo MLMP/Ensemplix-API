@@ -2,11 +2,11 @@
 ==========
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /player/info/](player.md) | Информация о игроке. | - |
-| [PUT /player/online/](player.md) | Устанавливает статус игрока в онлайн режим на 15 минут. | + |
-| [GET /player/violations/](player.md) | Информация о нарушениях игрока. | - |
-| [POST /player/search/](player.md) | Поиск игрока. | - |
-| [GET /player/chat/](player.md) | История сообщений игрока в чате. | + |
+| [GET /player/info/](player.md#get-playerinfo) | Информация о игроке. | - |
+| [PUT /player/online/](player.md#put-playeronline) | Устанавливает статус игрока в онлайн режим на 15 минут. | + |
+| [GET /player/violations/](player.md#get-playerviolations) | Информация о нарушениях игрока. | - |
+| [POST /player/search/](player.md#post-playersearch) | Поиск игрока. | - |
+| [GET /player/chat/](player.md#get-playerchat) | История сообщений игрока в чате. | + |
 | [GET /player/commands/](player.md) | История вызовов игровых команд | + |
 
 ## ``` GET /player/info/ ``` 
