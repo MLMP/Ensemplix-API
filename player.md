@@ -118,16 +118,17 @@ http://enapi.ru/2.0/player/violations/ensiriuswOw/
 ### Пример ответа 
 ```json 
 {"violations":{
-         "admin":"ensiriuswOw",
-         "time":"1369652283",
-         "operation":"ban",
-         "reason":"Проверка",
-         "punish_time":"-1"}
-       ,{
-         "admin":"ensiriuswOw",
-         "time":"1369652283",
-         "operation":"unban"
-       }
+        "violation":{
+             "admin":"ensiriuswOw",
+             "time":"1369652283",
+             "operation":"ban",
+             "reason":"Проверка",
+             "punish_time":"-1"},
+        "violtation":{
+             "admin":"ensiriuswOw",
+             "time":"1369652283",
+             "operation":"unban"
+        }
 }
 ```
 ### Пояснение параметров ответа
@@ -169,8 +170,7 @@ http://enapi.ru/2.0/player/search/
       "Ensininka",
       "ensiq",
       "ensiq41",
-      "ensirius"
-    }
+      "ensirius"}
 }
 ```
 ### Пояснение параметров ответа
