@@ -212,7 +212,7 @@ http://enapi.ru/2.0/player/chat/ensiriuswOw/
 | time      | Время когда игрок оставил сообщение в unix time stamp. |
 | world     | Игровой мир в котором игрок написал сообщение. |
 
-## ``` GET /player/chat/ ``` 
+## ``` GET /player/commands/ ``` 
 История сообщений игрока в чате.
 
 | Параметры | Необходимость | Пояснение |
