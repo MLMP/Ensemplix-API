@@ -4,7 +4,6 @@
 | ----- | -------- |:---:|
 | [GET /player/info/](player.md) | Информация о игроке. | - |
 | [PUT /player/online/](player.md) | Устанавливает статус игрока в онлайн режим на 15 минут. | + |
-| [GET /player/shop/](player.md) | История покупок и продаж игрока в игровом магазине. | - |
 | [GET /player/violations/](player.md) | Информация о нарушениях игрока. | - |
 | [GET /player/search/](player.md) | Поиск игрока. | - |
 | [GET /player/chat/](player.md) | История сообщений игрока в чате. | + |
