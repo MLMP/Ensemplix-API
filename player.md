@@ -227,15 +227,15 @@ http://enapi.ru/2.0/player/commands/ensiriuswOw/
 ```
 ### Пример ответа 
 ```json 
-{"commands":[
-         "command":"/w qw33 сегодня у тебя?",
-         "time":"1369652283",
-         "world":"Sandbox"]
-       ,[
-         "command":"/home qw33",
-         "time":"1369652285",
-         "world":"Sandbox"
-        ]
+{"commands":{
+           "command":"/w qw33 сегодня у тебя?",
+           "time":"1369652283",
+           "world":"Sandbox"
+         },{
+           "command":"/home qw33",
+           "time":"1369652285",
+           "world":"Sandbox"
+        }
 }
 ```
 ### Пояснение параметров ответа
