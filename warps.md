@@ -164,8 +164,6 @@ http://enapi.ru/2.0/warps/location/x/0/y/0/z/0/world/HiTech152/
 | Please provide X coordinate. | Необходимо указать координату по оси X. |
 | Please provide Z coordinate. | Необходимо указать координату по оси Z. |
 | Please provide world. | Необходимо указать игровой мир. |
-| Radius to small. | Минимальный радиус поиска 30 блоков. |
-| Radius to big. | Максимальный радиус поиска 1000 блоков. |
 
 ## ``` GET /warps/player/ ``` 
 Список варпов у игрока.
