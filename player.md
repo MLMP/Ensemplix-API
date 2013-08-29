@@ -7,7 +7,7 @@
 | [GET /player/violations/](player.md#get-playerviolations) | Информация о нарушениях игрока. | - |
 | [POST /player/search/](player.md#post-playersearch) | Поиск игрока. | - |
 | [GET /player/chat/](player.md#get-playerchat) | История сообщений игрока в чате. | + |
-| [GET /player/commands/](player.md) | История вызовов игровых команд | + |
+| [GET /player/commands/](player.md#get-playercommands) | История вызовов игровых команд | + |
 
 ## ``` GET /player/info/ ``` 
 Вся информация об игроке.
