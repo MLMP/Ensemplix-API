@@ -2,7 +2,7 @@
 ==========
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /shop/info/](clans.md#get-clans) | История покупки и продажи в магазин. | - |
+| [GET /shop/info/](shop.md#get-shopinfo) | История покупки и продажи в магазин. | - |
 
 ## ``` GET /shop/info/ ``` 
 История покупок и продаж в магазин у игрока. 
@@ -22,6 +22,8 @@ http://enapi.ru/2.0/shop/info/ensiriuswOw/
 {"history":{
           "shop":{
               "item":"ЗЕМЛЯ",
+              "item_id":"2",
+              "item_icon":"http://ensemplix.ru/images/items/Grid_Трава.png",
               "amount":"64",
               "price":"17",
               "operation":"1",
@@ -36,6 +38,7 @@ http://enapi.ru/2.0/shop/info/ensiriuswOw/
           },
           "shop":{
               "item":"ЗЕМЛЯ",
+              "item_icon":"http://ensemplix.ru/images/items/Grid_Трава.png",
               "amount":"64",
               "price":"17",
               "operation":"1",
@@ -51,7 +54,20 @@ http://enapi.ru/2.0/shop/info/ensiriuswOw/
    }
 }
 ```
-
+### Пояснение параметров ответа
+| Параметры | Пояснение |
+| --------- | --------- |
+| item      | Название предмета. |
+| item_id   | Id предмета. |
+| item_icon | Иконка предмета. |
+| amount    | Количество товара. |
+| price     | Цена товара. |
+| operation | Тип операции. 0 - покупка. | 1 - продажа. |
+| from      | Продавец предмета. |
+| to        | Покупатель предмета. |
+| location  | Координаты магазина, где проводилась операция. |
+| world     | Игровой мир, где проводилась операция. |
+| time      | Время в unix timestamp, где проводилась операция. |
 
 
 
