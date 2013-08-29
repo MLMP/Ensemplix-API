@@ -20,32 +20,35 @@ http://enapi.ru/2.0/shop/info/ensiriuswOw/
 ### Пример ответа 
 ```json 
 {"history":{
-        "item":"ЗЕМЛЯ",
-        "amount":"64",
-        "price":"17",
-        "operation":"1",
-        "from":"93OLEG93",
-        "to":"NG16",
-        "location":{
-               "x":"504",
-               "y":"65",
-               "z":"-17"},
-        "world":"Sandbox",
-        "time":"1369652283"
-      },{
-        "item":"ЗЕМЛЯ",
-        "amount":"64",
-        "price":"17",
-        "operation":"1",
-        "from":"93OLEG93",
-        "to":"NG16",
-        "location":{
-               "x":"504",
-               "y":"65",
-               "z":"-17"},
-        "world":"Sandbox",
-        "time":"1369652283"
-      }
+          "shop":{
+              "item":"ЗЕМЛЯ",
+              "amount":"64",
+              "price":"17",
+              "operation":"1",
+              "from":"93OLEG93",
+              "to":"NG16",
+              "location":{
+                     "x":"504",
+                     "y":"65",
+                     "z":"-17"},
+              "world":"Sandbox",
+              "time":"1369652283"
+          },
+          "shop":{
+              "item":"ЗЕМЛЯ",
+              "amount":"64",
+              "price":"17",
+              "operation":"1",
+              "from":"93OLEG93",
+              "to":"NG16",
+              "location":{
+                     "x":"504",
+                     "y":"65",
+                     "z":"-17"},
+              "world":"Sandbox",
+              "time":"1369652283"
+         }   
+   }
 }
 ```
 
