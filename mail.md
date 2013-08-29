@@ -79,6 +79,12 @@ http://enapi.ru/2.0/mail/player/token/a43jbvc78ag8765/
 
 ### Пример запроса
 ``` 
+
+PUT token fds88asfhj
+PUT target ensiriuswOw
+PUT header Привет
+PUT text Привет как дела?
+
 http://enapi.ru/2.0/mail/send/
 ```
 
