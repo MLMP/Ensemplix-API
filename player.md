@@ -198,8 +198,7 @@ http://enapi.ru/2.0/player/chat/ensiriuswOw/
        "chat":{   
            "message":"Всем привет",
            "time":"1369652283",
-           "world":"Sandbox"}
-       ,
+           "world":"Sandbox"},
        "chat":{
            "message":"Как у вас дела?",
            "time":"1369652285",
@@ -233,8 +232,7 @@ http://enapi.ru/2.0/player/commands/ensiriuswOw/
          "command":{
              "message":"/w qw33 сегодня у тебя?",
              "time":"1369652283",
-             "world":"Sandbox"
-         },
+             "world":"Sandbox"},
          "command":{
              "message":"/home qw33",
              "time":"1369652285",
