@@ -154,23 +154,25 @@ http://enapi.ru/2.0/player/search/
 ```
 ### Пример ответа 
 ```json 
-{"found":1,
- "players":{
-      "ensi",
-      "Ensidia",
-      "ensientminer",
-      "Ensiferum",
-      "ENSIiK",
-      "EnsiK",
-      "ENSIK123",
-      "EnsikCool",
-      "ensil",
-      "Ensiman20010",
-      "Ensin",
-      "Ensininka",
-      "ensiq",
-      "ensiq41",
-      "ensirius"}
+{"search":{
+    "found":1,
+    "players":{
+        "ensi",
+        "Ensidia",
+        "ensientminer",
+        "Ensiferum",
+        "ENSIiK",
+        "EnsiK",
+        "ENSIK123",
+        "EnsikCool",
+        "ensil",
+        "Ensiman20010",
+        "Ensin",
+        "Ensininka",
+        "ensiq",
+        "ensiq41",
+        "ensirius"
+    }
 }
 ```
 ### Пояснение параметров ответа
