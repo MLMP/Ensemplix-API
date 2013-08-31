@@ -9,6 +9,8 @@
 | [GET /server/stats/](server.md#get-serverstats) | Различная статистика сервера. | - |
 | [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](server.md#get-servernews) | Новости сервера. | - |
+| [GET /server/launcher/](server.md#get-serverlauncher) | Версия лаунчера. | - |
+| [GET /server/client/](server.md#getserverclient) | Версия сборки клиента. | - |
 
 ## ``` GET /server/game/ ``` 
 Информация о игровых серверах. Обновление информации о статусе и игроках происходит раз в минуту.
@@ -230,3 +232,40 @@ http://enapi.ru/2.0/server/news/
 | created | Время написания новости в unix timestamp. |
 | views | Количество просмотров новости. |
 | comments | Количество комментарияв к новости. |
+
+## ``` GET /server/launcher/ ``` 
+Версия лаунчера.
+
+### Параметры
+Параметры не нужны.
+
+### Пример запроса
+``` 
+http://enapi.ru/2.0/server/launcher/
+```
+### Пример ответа 
+```json 
+{"version":"2.0"}
+```
+### Пояснение параметров ответа
+| Параметры | Пояснение |
+| version   | Версия лаунчера. |
+
+## ``` GET /server/client/ ``` 
+Версия сбоорки клиента.
+
+### Параметры
+Параметры не нужны.
+
+### Пример запроса
+``` 
+http://enapi.ru/2.0/server/client/
+```
+### Пример ответа 
+```json 
+{"version":"1.6"}
+```
+### Пояснение параметров ответа
+| Параметры | Пояснение |
+| version   | Версия сборки клиента. |
+
