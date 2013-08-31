@@ -93,7 +93,8 @@ API для работы. OAuth - позволяет получить досту�
 | [GET /server/stats/](server.md#get-serverstats) | Различная статистика сервера. | - |
 | [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](server.md#get-servernews) | Новости сервера. | - |
-
+| [GET /server/launcher/](server.md#get-serverlauncher) | Версия лаунчера. | - |
+| [GET /server/client/](server.md#getserverclient) | Версия сборки клиента. | - |
 
 ### Форум
 | Метод | Описание | OA2 |
