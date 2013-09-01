@@ -4,9 +4,9 @@
 
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /mail/player/](docs/mail.md#get-mailplayer) | Получить почту игрока. | + |
-| [PUT /mail/send/](docs/mail.md#put-mailsend) | Отправить письмо. | + |
-| [DELETE /mail/delete/](docs/mail.md#put-mailsend) | Удаляет почту игрока. | + |
+| [GET /mail/player/](mail.md#get-mailplayer) | Получить почту игрока. | + |
+| [PUT /mail/send/](mail.md#put-mailsend) | Отправить письмо. | + |
+| [DELETE /mail/delete/](mail.md#put-mailsend) | Удаляет почту игрока. | + |
 
 ## ``` GET /mail/player/ ``` 
 Возвращает всю входяющию и исходяющию почту игрока. Не больше 100 писем за раз.
