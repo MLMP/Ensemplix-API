@@ -32,69 +32,69 @@ API для работы. OAuth - позволяет получить досту�
 ### Миры
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /worlds/](worlds.md#get-worlds) | Названия миров. | - |
+| [GET /worlds/](docs/worlds.md#get-worlds) | Названия миров. | - |
 
 ### Игрок
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /player/info/](docs/player.md#get-playerinfo) | Информация о игроке. | - |
-| [PUT /player/online/](player.md#put-playeronline) | Устанавливает статус игрока в онлайн режим на 15 минут. | + |
-| [GET /player/violations/](player.md#get-playerviolations) | Информация о нарушениях игрока. | - |
-| [POST /player/search/](player.md#post-playersearch) | Поиск игрока. | - |
-| [GET /player/chat/](player.md#get-playerchat) | История сообщений игрока в чате. | + |
-| [GET /player/commands/](player.md#get-playercommands) | История вызовов игровых команд | + |
+| [PUT /player/online/](docs/player.md#put-playeronline) | Устанавливает статус игрока в онлайн режим на 15 минут. | + |
+| [GET /player/violations/](docs/player.md#get-playerviolations) | Информация о нарушениях игрока. | - |
+| [POST /player/search/](docs/player.md#post-playersearch) | Поиск игрока. | - |
+| [GET /player/chat/](docs/player.md#get-playerchat) | История сообщений игрока в чате. | + |
+| [GET /player/commands/](docs/player.md#get-playercommands) | История вызовов игровых команд | + |
 
 ### Блоки
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /blocks/info/](blocks.md#get-blocksinfo) | Изменения блоков в мире на указанных координатах. | - |
-| [GET /blocks/player/](blocks.md#get-blocksplayer) | Статистика изменений блоков у игрока. | - |
+| [GET /blocks/info/](docs/blocks.md#get-blocksinfo) | Изменения блоков в мире на указанных координатах. | - |
+| [GET /blocks/player/](docs/blocks.md#get-blocksplayer) | Статистика изменений блоков у игрока. | - |
 
 ### Кланы
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /clans/](clans.md#get-clans) | Список кланов на сервере. | - |
-| [GET /clan/](clans.md#get-clan) | Информация о клане. | - |
+| [GET /clans/](docs/clans.md#get-clans) | Список кланов на сервере. | - |
+| [GET /clan/](docs/clans.md#get-clan) | Информация о клане. | - |
 
 ###Почта
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /mail/player/](mail.md#get-mailplayer) | Получить почту игрока. | + |
-| [PUT /mail/send/](mail.md#put-mailsend) | Отправить письмо. | + |
-| [DELETE /mail/delete/](mail.md#put-mailsend) | Удаляет почту игрока. | + |
+| [GET /mail/player/](docs/mail.md#get-mailplayer) | Получить почту игрока. | + |
+| [PUT /mail/send/](docs/mail.md#put-mailsend) | Отправить письмо. | + |
+| [DELETE /mail/delete/](docs/mail.md#put-mailsend) | Удаляет почту игрока. | + |
 
 ###Магазин
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /shop/info/](shop.md#get-shopinfo) | История покупки и продажи в магазин. | - |
+| [GET /shop/info/](docs/shop.md#get-shopinfo) | История покупки и продажи в магазин. | - |
 
 ### Варпы
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /warp/](warps.md#get-warp.md) | Информация о варпе. | - |
-| [GET /warps/search/](warps.md#get-warpssearch) | Поиск варпов по названию. | - |
-| [GET /warps/location/](warps.md#get-warpslocation) | Получение информации о ближайший варпах. | - |
-| [GET /warps/player/](warps.md#get-warpsplayer) | Варпы игрока. | - |
+| [GET /warp/](docs/warps.md#get-warp.md) | Информация о варпе. | - |
+| [GET /warps/search/](docs/warps.md#get-warpssearch) | Поиск варпов по названию. | - |
+| [GET /warps/location/](docs/warps.md#get-warpslocation) | Получение информации о ближайший варпах. | - |
+| [GET /warps/player/](docs/warps.md#get-warpsplayer) | Варпы игрока. | - |
 
 ### Регионы
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /regions/info/](regions.md#get-regionsinfo) | Информация о регионе. | - |
-| [GET /regions/search/](regions.md#get-regionssearch) | Поиск регионов по названию. | - |
-| [GET /regions/location/](regions.md#get-regionslocation) | Получение информации о ближайший регионах. | - |
-| [GET /regions/player/](regions.md#get-regionsplayer) | Информация о регионах игрока. | - |
+| [GET /regions/info/](docs/regions.md#get-regionsinfo) | Информация о регионе. | - |
+| [GET /regions/search/](docs/regions.md#get-regionssearch) | Поиск регионов по названию. | - |
+| [GET /regions/location/](docs/regions.md#get-regionslocation) | Получение информации о ближайший регионах. | - |
+| [GET /regions/player/](docs/regions.md#get-regionsplayer) | Информация о регионах игрока. | - |
 
 ### Сервер
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /server/game/](server.md#get-servergame) | Информация о игровых серверах. | - |
-| [GET /server/web/](server.md#get-serverweb) | Информация о посетителях сайта. | - |
-| [GET /server/events/](server.md#get-serverevents) | События за последние время на сервере. | - |
-| [GET /server/stats/](server.md#get-serverstats) | Различная статистика сервера. | - |
-| [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
-| [GET /server/news/](server.md#get-servernews) | Новости сервера. | - |
-| [GET /server/launcher/](server.md#get-serverlauncher) | Версия лаунчера. | - |
-| [GET /server/client/](server.md#getserverclient) | Версия сборки клиента. | - |
+| [GET /server/game/](docs/server.md#get-servergame) | Информация о игровых серверах. | - |
+| [GET /server/web/](docs/server.md#get-serverweb) | Информация о посетителях сайта. | - |
+| [GET /server/events/](docs/server.md#get-serverevents) | События за последние время на сервере. | - |
+| [GET /server/stats/](docs/server.md#get-serverstats) | Различная статистика сервера. | - |
+| [GET /server/bans/](docs/server.md#get-serverbans) | Список забаненных игроков. | - |
+| [GET /server/news/](docs/server.md#get-servernews) | Новости сервера. | - |
+| [GET /server/launcher/](docs/server.md#get-serverlauncher) | Версия лаунчера. | - |
+| [GET /server/client/](docs/server.md#getserverclient) | Версия сборки клиента. | - |
 
 ### Форум
 | Метод | Описание | OA2 |
