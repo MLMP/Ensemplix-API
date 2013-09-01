@@ -37,7 +37,7 @@ API для работы. OAuth - позволяет получить досту�
 ### Игрок
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /player/info/](player.md#get-playerinfo) | Информация о игроке. | - |
+| [GET /player/info/](docs/player.md#get-playerinfo) | Информация о игроке. | - |
 | [PUT /player/online/](player.md#put-playeronline) | Устанавливает статус игрока в онлайн режим на 15 минут. | + |
 | [GET /player/violations/](player.md#get-playerviolations) | Информация о нарушениях игрока. | - |
 | [POST /player/search/](player.md#post-playersearch) | Поиск игрока. | - |
