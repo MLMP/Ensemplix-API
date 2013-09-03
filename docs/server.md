@@ -28,7 +28,6 @@ http://enapi.ru/2.0/server/game/
 {"game":{
     "server":{
          "name":"Sandbox",
-         "online":"1",
          "players":"81",
          "maximum":"100",
          "ip":"sv1.ensemplix.ru",
@@ -37,7 +36,6 @@ http://enapi.ru/2.0/server/game/
     },
     "server":{
          "name":"Cogito",
-         "online":"1",
          "players":"87",
          "maximum":"100",
          "ip":"sv2.ensemplix.ru",
@@ -50,7 +48,7 @@ http://enapi.ru/2.0/server/game/
 | Параметры | Пояснение |
 | --------- | --------- |
 | name      | Название сервера. |
-| online    | Статус сервера. 1 - доступен. 2 - не доступен. |
+| online    | Статус сервера. 0 - доступен. 1 - не доступен. |
 | players   | Игроков на сервере. |
 | maximum   | Максимальное количество игроков на спавне. |
 | ip        | Ip Адрес на котором работает сервер. |
