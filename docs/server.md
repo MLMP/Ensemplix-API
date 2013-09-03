@@ -28,6 +28,7 @@ http://enapi.ru/2.0/server/game/
 {"game":{
     "server":{
          "name":"Sandbox",
+         "online":"1",
          "players":"81",
          "maximum":"100",
          "ip":"sv1.ensemplix.ru",
@@ -36,6 +37,7 @@ http://enapi.ru/2.0/server/game/
     },
     "server":{
          "name":"Cogito",
+         "online":"1",
          "players":"87",
          "maximum":"100",
          "ip":"sv2.ensemplix.ru",
