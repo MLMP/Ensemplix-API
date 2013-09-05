@@ -19,7 +19,7 @@ http://enapi.ru/2.0/shop/info/ensiriuswOw/
 ```
 ### Пример ответа 
 ```json 
-{"history":{
+{
           "shop":{
               "item":"ЗЕМЛЯ",
               "item_id":"2",
@@ -50,8 +50,7 @@ http://enapi.ru/2.0/shop/info/ensiriuswOw/
                      "z":"-17"},
               "world":"Sandbox",
               "time":"1369652284"
-         }   
-   }
+          }   
 }
 ```
 ### Пояснение параметров ответа
