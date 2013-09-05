@@ -25,12 +25,12 @@ http://enapi.ru/2.0/blocks/info/x/521/y/66/z/199/world/Davids152/
 ```
 ### Пример ответа 
 ```json 
-{
+{"blocks":{
     "player":"serg_next12",
     "status": "1",
     "id":"1",
     "data":"0",
-    "modifed":"1377670832"
+    "modifed":"1377670832"}
 }
 ```
 
