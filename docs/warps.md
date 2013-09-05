@@ -25,13 +25,13 @@ http://enapi.ru/2.0/warps/info/shop/world/Sandbox/
 ```
 ### Пример ответа 
 ```json 
-{"warp":{
+{
     "owner":"nsdp",
     "x":"-3473",
     "y":"71",
     "z":"-4324",
     "created":"1377672685",
-    "greeting":"§3[От Warp Shop]: §c Внимание! У нас Распродажа Алмазов и Железа!"}
+    "greeting":"§3[От Warp Shop]: §c Внимание! У нас Распродажа Алмазов и Железа!"
 }
 ```
 ### Пояснение параметров ответа
@@ -66,7 +66,7 @@ http://enapi.ru/2.0/warps/search/sho/
 ```
 ### Пример ответа 
 ```json 
-{"warps":{
+{
     "warp":{
         "name":"admin_shop",
         "owner":"ensiriuswOw",
@@ -86,6 +86,7 @@ http://enapi.ru/2.0/warps/search/sho/
         "created":"1377672685",
         "greeting":"§3[От Warp Shop]: §c Внимание! У нас Распродажа Алмазов и Железа!",
         "world","Sandbox"
+    }
 }
 ```
 ### Пояснение параметров ответа
@@ -125,7 +126,7 @@ http://enapi.ru/2.0/warps/location/x/0/y/0/z/0/world/HiTech152/
 ```
 ### Пример ответа 
 ```json 
-{"warps":{
+{
     "warp":{
         "name":"shop",
         "owner":"ensiriuswOw",
@@ -180,7 +181,7 @@ http://enapi.ru/2.0/warps/player/ensiriuswOw/
 ```
 ### Пример ответа 
 ```json 
-{"warps":{
+{
     "warp":{
         "name":"admin_shop",
         "owner":"ensiriuswOw",
