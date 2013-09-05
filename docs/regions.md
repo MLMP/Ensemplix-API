@@ -27,7 +27,7 @@ http://enapi.ru/2.0/regions/info/spawn4/
 
 ### Пример ответа 
 ```json 
-{
+{"region": {
     "size": {
          "minX":"-35",
          "minY":"44",
@@ -59,7 +59,7 @@ http://enapi.ru/2.0/regions/info/spawn4/
           "spawn2",
           "spawn3"
     ],
-    "created": "1377672685"
+    "created": "1377672685"}
 }
 ```
 ### Пояснение параметров ответа
