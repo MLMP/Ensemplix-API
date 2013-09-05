@@ -19,7 +19,7 @@ http://enapi.ru/2.0/clans/
 ```
 ### Пример ответа 
 ```json 
-{"clans":{
+{
     "clan":{
        "id":"1",
        "name":"Ensemplix",
@@ -32,7 +32,6 @@ http://enapi.ru/2.0/clans/
        "leader":"Steb",
        "members":"76"
        }
-    }
 }
 ```
 ### Пояснение параметров ответа
@@ -58,7 +57,7 @@ http://enapi.ru/2.0/clans/info/35/
 ```
 ### Пример ответа 
 ```json 
-{"clan":{
+{
      "name":"Yakuza",
      "leader":"IPalexIP",
      "greeting":"Наша группа: http://vk.com/clan_yakuza_minecraft",
