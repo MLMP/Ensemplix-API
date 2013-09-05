@@ -57,30 +57,31 @@ http://enapi.ru/2.0/clans/info/35/
 ```
 ### Пример ответа 
 ```json 
-{
-     "name":"Yakuza",
-     "leader":"IPalexIP",
-     "greeting":"Наша группа: http://vk.com/clan_yakuza_minecraft",
-     "clan_expirence":"57100",
-     "logo":"http://ensemplix.ru/images/clans/Yakuza_logo.jpg",
-     "members":"35",
-     "clan_members":{
-          "member":{
-              "player":"IPalexIP",
-              "joined":"1377671224",
-              "expirence":"100"
-          },
-          "member":{
-              "player":"Falgroth",
-              "joined":"1377671024",
-              "expirence":"500"
-          },
-          "member":{
-              "player":"DragonCHICK",
-              "joined":"1377671024",
-              "expirence":"56500"
-          } 
-     }
+{"clan":{
+         "name":"Yakuza",
+         "leader":"IPalexIP",
+         "greeting":"Наша группа: http://vk.com/clan_yakuza_minecraft",
+         "clan_expirence":"57100",
+         "logo":"http://ensemplix.ru/images/clans/Yakuza_logo.jpg",
+         "members":"35",
+         "clan_members":{
+              "member":{
+                  "player":"IPalexIP",
+                  "joined":"1377671224",
+                  "expirence":"100"
+              },
+              "member":{
+                  "player":"Falgroth",
+                  "joined":"1377671024",
+                  "expirence":"500"
+              },
+              "member":{
+                  "player":"DragonCHICK",
+                  "joined":"1377671024",
+                  "expirence":"56500"
+              } 
+         }
+    }
 }
 ```
 ### Пояснение параметров ответа
