@@ -19,7 +19,7 @@ http://enapi.ru/2.0/worlds/
 ```
 ### Пример ответа 
 ```json 
-{
+{"worlds":{
     "Sandbox",
     "CarnageR4",
     "CogitoR4",
@@ -28,7 +28,7 @@ http://enapi.ru/2.0/worlds/
     "Magnus152",
     "Theos",
     "DedalR2",
-    "AmberR4"
+    "AmberR4"}
 }
 ```
 ### Пояснение параметров ответа
