@@ -70,7 +70,7 @@ http://enapi.ru/2.0/server/web/
 ```
 ### Пример ответа 
 ```json 
-{
+{"web":{
     "guests":"49",
     "online":"73",
     "players":{
@@ -80,7 +80,7 @@ http://enapi.ru/2.0/server/web/
            "dosser",
            "qw33"
     },
-    "total":"122"
+    "total":"122"}
 }
 ```
 ### Пояснение параметров ответа
@@ -136,13 +136,12 @@ http://enapi.ru/2.0/server/stats/
 ```
 ### Пример ответа 
 ```json 
-{
+{"stats":{
       "played":"6546456546",
       "expirence":"4354379097",
       "commands":"243543397",
       "chat":"43543797",
-      "coins":"43543797"
-      }
+      "coins":"43543797"}
 }
 ```
 
