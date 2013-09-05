@@ -26,7 +26,7 @@ class Api_Violations {
         }
 
         if(count($output) > 0) {
-            echo json_encode($output);
+            echo json_encode($output, JSON_UNESCAPED_UNICODE);
         } else {
             throw new ApiException("No violations found for " . $player);
         }

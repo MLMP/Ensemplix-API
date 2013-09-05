@@ -64,7 +64,7 @@ class Core {
                         $api->actionCustom();
                     }
                 } else if(method_exists($api, $action)) {
-                    $this->args = array_slice($args, 2);
+                    $this->args = array_slice($args, 3);
 
                     if(isset($this->args)) {
                         $api->$action($this->args);
