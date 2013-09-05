@@ -22,7 +22,7 @@ http://enapi.ru/2.0/player/info/ensiriuswOw/
 ```
 ### Пример ответа 
 ```json 
-{
+{"player":{
         "level":"7",
         "registration":"1369652283",
         "last_login":"1369652283",
@@ -39,7 +39,7 @@ http://enapi.ru/2.0/player/info/ensiriuswOw/
         "name_color":"c",
         "donate_till":"1369652283",
         "muted":"1369652283",
-        "banned":"1369652283"
+        "banned":"1369652283"}
 }
 ```
 ### Пояснение параметров ответа
@@ -129,7 +129,7 @@ http://enapi.ru/2.0/player/violations/ensiriuswOw/
              "operation":"ban",
              "reason":"Проверка",
              "punish_time":"-1"},
-        "violtation":{
+        "violation":{
              "admin":"ensiriuswOw",
              "time":"1369652283",
              "operation":"unban"
@@ -166,7 +166,7 @@ http://enapi.ru/2.0/player/search/
 ```
 ### Пример ответа 
 ```json 
-{
+{"search":{
     "found":1,
     "players":{
         "ensi",
@@ -183,7 +183,7 @@ http://enapi.ru/2.0/player/search/
         "Ensininka",
         "ensiq",
         "ensiq41",
-        "ensirius"
+        "ensirius"}
     }
 }
 ```
