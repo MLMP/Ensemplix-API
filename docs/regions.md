@@ -27,7 +27,7 @@ http://enapi.ru/2.0/regions/info/spawn4/
 
 ### Пример ответа 
 ```json 
-{"region": {
+{
     "size": {
          "minX":"-35",
          "minY":"44",
@@ -59,7 +59,7 @@ http://enapi.ru/2.0/regions/info/spawn4/
           "spawn2",
           "spawn3"
     ],
-    "created": "1377672685"}
+    "created": "1377672685"
 }
 ```
 ### Пояснение параметров ответа
@@ -95,7 +95,7 @@ http://enapi.ru/2.0/regions/search/spawn/
 
 ### Пример ответа 
 ```json 
-{"regions":{
+{
     "region": {
         "size": {
              "minX":"-35",
@@ -170,7 +170,7 @@ http://enapi.ru/2.0/regions/location/x/0/y/0/z/0/world/HiTech152/
 ```
 ### Пример ответа 
 ```json 
-{"regions":{
+{
     "region": {
         "size": {
              "minX":"-35",
@@ -244,7 +244,7 @@ http://enapi.ru/2.0/regions/player/ensiriuswOw/
 
 ### Пример ответа 
 ```json
-{"regions":{
+{
     "region": {
         "size": {
              "minX":"-35",
