@@ -25,7 +25,7 @@ http://enapi.ru/2.0/server/game/
 ```
 ### Пример ответа 
 ```json 
-{"game":{
+{
     "server":{
          "name":"Sandbox",
          "online":"1",
@@ -70,7 +70,7 @@ http://enapi.ru/2.0/server/web/
 ```
 ### Пример ответа 
 ```json 
-{"web":{
+{
     "guests":"49",
     "online":"73",
     "players":{
@@ -81,7 +81,6 @@ http://enapi.ru/2.0/server/web/
            "qw33"
     },
     "total":"122"
-    }
 }
 ```
 ### Пояснение параметров ответа
@@ -107,16 +106,15 @@ http://enapi.ru/2.0/server/events/
 ```
 ### Пример ответа 
 ```json 
-{"events":{
-         "event":{
-            "message":"dosser был исключен из состава модераторов",
-            "created":"1377705038"
-         },
-         "event":{
-            "message":"SatoAV приобрел Super-Vip",
-            "created":"1377705008"
-         }
-      }
+{
+     "event":{
+        "message":"dosser был исключен из состава модераторов",
+        "created":"1377705038"
+     },
+     "event":{
+        "message":"SatoAV приобрел Super-Vip",
+        "created":"1377705008"
+     }
 }
 ```
 ### Пояснение параметров ответа
@@ -138,7 +136,7 @@ http://enapi.ru/2.0/server/stats/
 ```
 ### Пример ответа 
 ```json 
-{"stats":{
+{
       "played":"6546456546",
       "expirence":"4354379097",
       "commands":"243543397",
@@ -171,7 +169,7 @@ http://enapi.ru/2.0/server/bans/
 ```
 ### Пример ответа 
 ```json 
-{"bans":{
+{
     "ban":{
          "player":"web93onv",
          "reason":"1.4",
@@ -204,7 +202,7 @@ http://enapi.ru/2.0/server/news/
 ```
 ### Пример ответа 
 ```json 
-{"response":{
+{
     "news":{
          "id":"161",
          "header":"Переход на 1.5.2",
