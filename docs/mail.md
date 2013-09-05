@@ -27,7 +27,7 @@ http://enapi.ru/2.0/mail/player/token/a43jbvc78ag8765/
 
 ### Пример ответа 
 ```json 
-{"messages":{
+{
       "mail": {
         "to":"dosser",
         "from":"Информатор",
