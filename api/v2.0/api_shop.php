@@ -10,15 +10,7 @@ class Api_shop {
     public function actionInfo($args = null) {
 
         if($args != null) {
-            $player = array_search('player', $args);
-
-            if(isset($player)) {
-                if(isset($args[$player + 1])) {
-                    $player = $args[$player + 1];
-                } else {
-                    unset($player);
-                }
-            }
+            $player = $args[0];
 
             $offset = array_search('offset', $args);
 
@@ -95,7 +87,11 @@ class Api_shop {
                     $output[]['shop'] = $string;
                 }
 
-                echo json_encode($output);
+                if(!empty($output)) {
+                    echo json_encode($output);
+                } else {
+                    throw new ApiException("No operations found.");
+                }
             } catch (PDOException $e) {
                 echo $e->getMessage();
             }
