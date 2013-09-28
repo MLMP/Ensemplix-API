@@ -9,7 +9,11 @@ class Api_Logs {
     private $from = 0;
     private $search;
 
-    /** Доступ по паролю. */
+    /** 
+     * GET /logs/
+     * 
+     * Доступ по паролю. 
+     */
     public function __construct() {
         if(isset($_POST['secret'])) {
             if($_POST['secret'] != "") {
@@ -20,7 +24,9 @@ class Api_Logs {
         }
     }
 
-    /** Логи команд и чата. */
+    /** 
+     * Логи команд и чата. 
+     */
     public function actionCustom($args) {
         if($args != null && count($args) > 1 && ($args[2] != "cmd" && $args[2] != "chat")) {
             $this->parseArgs($args);
@@ -168,7 +174,9 @@ class Api_Logs {
     }
 
 
-    /** Парсер аргументов */
+    /** 
+     * Парсер аргументов.
+     */
     private function parseArgs($args) {
         $world_key = array_search('world', $args);
 
