@@ -10,7 +10,9 @@ class Core {
     private $apiName;
     private $apiVersion;
 
-    /** Парсинг параметров для выбора API, а так же передачи аргументов. */
+    /** 
+     * Парсинг параметров для выбора API, а так же передачи аргументов. 
+     */
     public function __construct() {
         try {
             header('Access-Control-Allow-Origin: *');
@@ -48,7 +50,9 @@ class Core {
         }
     }
 
-    /** Вызов API  */
+    /** 
+     * Вызов API.
+     */
     public function route() {
             $apiFile = "api/v" . $this->apiVersion . "/" . $this->apiName . ".php";
             if(file_exists($apiFile)) {
@@ -79,7 +83,9 @@ class Core {
             }
     }
 
-    /** Версии API */
+    /**
+     * Версии API. 
+     */
     public function knownApiVersions() {
         return array("1.0","2.0");
     }
