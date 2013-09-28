@@ -3,7 +3,11 @@
 
 class Api_Violations {
 
-    /** Список наружений игрока. */
+    /** 
+     * GET /violations/
+     *
+     * Список наружений игрока. 
+     */
     public function actionPlayer($args = null) {
         if($args == null) {
             throw new ApiException("Please provide player.");
@@ -30,9 +34,6 @@ class Api_Violations {
         } else {
             throw new ApiException("No violations found for " . $player);
         }
-
-
     }
-
 
 }
