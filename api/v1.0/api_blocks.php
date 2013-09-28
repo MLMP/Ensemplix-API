@@ -18,6 +18,8 @@ class Api_Blocks {
     }
 
     /** 
+     * GET /blocks/
+     * 
      * История изменений блока на указанных координатах и мире. 
      */
     public function blocks($args, $status) {
