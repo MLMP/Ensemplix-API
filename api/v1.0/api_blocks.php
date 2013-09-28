@@ -17,7 +17,9 @@ class Api_Blocks {
         $this->blocks($args, false);
     }
 
-    /** История изменений блока на указанных координатах и мире. */
+    /** 
+     * История изменений блока на указанных координатах и мире. 
+     */
     public function blocks($args, $status) {
         $this->parseArgs($args);
 
