@@ -29,7 +29,8 @@ http://enapi.ru/2.0/server/game/
    "name":"Amber",
    "players":0,
    "maximum":100,
-   "online":false,"version":"1.4.7",
+   "online":false,
+   "version":"1.4.7",
    "ip":"sv3.ensemplix.ru",
    "port":25565
 },
