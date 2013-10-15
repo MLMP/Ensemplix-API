@@ -32,15 +32,16 @@ http://enapi.ru/2.0/server/game/
    "online":false,"version":"1.4.7",
    "ip":"sv3.ensemplix.ru",
    "port":25565
- },
- { "name":"Carnage",
+},
+{ 
+   "name":"Carnage",
    "players":80,
    "maximum":80,
    "online":true,
    "version":"1.5.2",
    "ip":"sv1.ensemplix.ru",
    "port":25564
-  }]
+}]
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
