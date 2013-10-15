@@ -12,15 +12,11 @@ class Api_server {
         $connection = $connection->getGameDatabaseConnection();
 
         try {
-            $statement = $connection->prepare("SELECT `value` FROM `stats` WHERE `stat` = 'launcher_version' LIMIT 1");
+            $statement = $connection->prepare("SELECT `value` as `version` FROM `stats` WHERE `stat` = 'launcher_version' LIMIT 1");
             $statement->execute();
             unset($connection);
 
-            $string = $statement->fetch(PDO::FETCH_ASSOC);
-
-            $version = array("version" => $string['value']);
-
-            echo json_encode($version);
+            echo json_encode($statement->fetch(PDO::FETCH_ASSOC));
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
@@ -36,15 +32,11 @@ class Api_server {
         $connection = $connection->getGameDatabaseConnection();
 
         try {
-            $statement = $connection->prepare("SELECT `value` FROM `stats` WHERE `stat` = 'client_version' LIMIT 1");
+            $statement = $connection->prepare("SELECT `value` as `version` FROM `stats` WHERE `stat` = 'client_version' LIMIT 1");
             $statement->execute();
             unset($connection);
 
-            $string = $statement->fetch(PDO::FETCH_ASSOC);
-
-            $version = array("version" => $string['value']);
-
-            echo json_encode($version);
+            echo json_encode($statement->fetch(PDO::FETCH_ASSOC));
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
