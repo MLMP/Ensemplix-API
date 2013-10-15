@@ -26,7 +26,7 @@ http://enapi.ru/2.0/server/game/
 ### Пример ответа 
 ```json 
 {
-    "server":{
+    {
          "name":"Sandbox",
          "online":"1",
          "players":"81",
@@ -35,7 +35,7 @@ http://enapi.ru/2.0/server/game/
          "port":"25565",
          "version":"1.5.2"
     },
-    "server":{
+    {
          "name":"Cogito",
          "online":"1",
          "players":"87",
@@ -107,11 +107,11 @@ http://enapi.ru/2.0/server/events/
 ### Пример ответа 
 ```json 
 {
-     "event":{
+     {
         "message":"dosser был исключен из состава модераторов",
         "created":"1377705038"
      },
-     "event":{
+     {
         "message":"SatoAV приобрел Super-Vip",
         "created":"1377705008"
      }
@@ -136,12 +136,12 @@ http://enapi.ru/2.0/server/stats/
 ```
 ### Пример ответа 
 ```json 
-{"stats":{
+{
       "played":"6546456546",
       "expirence":"4354379097",
       "commands":"243543397",
       "chat":"43543797",
-      "coins":"43543797"}
+      "coins":"43543797"
 }
 ```
 
@@ -169,13 +169,13 @@ http://enapi.ru/2.0/server/bans/
 ### Пример ответа 
 ```json 
 {
-    "ban":{
+    {
          "player":"web93onv",
          "reason":"1.4",
          "admin":"ensiriuswOw",
          "till":"1333118988",
     },
-    "ban":{
+    {
          "player":"Mantis",
          "reason":"1.4",
          "admin":"ensiriuswOw",
@@ -202,7 +202,7 @@ http://enapi.ru/2.0/server/news/
 ### Пример ответа 
 ```json 
 {
-    "news":{
+    {
          "id":"161",
          "header":"Переход на 1.5.2",
          "text":"Дорогие игроки нашего сервера! Рады сообщить вам, что почти все наши сервера успешно обновлены до версии 1.5.2.! К сожалению, мы не смогли перевести только Amber и Dedal, поскольку мода Divine RPG для 1.5.2 еще нет. ",
@@ -210,7 +210,7 @@ http://enapi.ru/2.0/server/news/
          "views":"14279",
          "comments":"187"
     },
-    "news":{
+    {
          "id":"160",
          "header":"Отчет",
          "text":"Мы обещали, что как только будем уверены в стабильности серверов, мы тут же напишем новость. Теперь мы уверены.",
