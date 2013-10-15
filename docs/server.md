@@ -25,7 +25,22 @@ http://enapi.ru/2.0/server/game/
 ```
 ### Пример ответа 
 ```json 
-[{"name":"Amber","players":0,"maximum":100,"online":false,"version":"1.4.7","ip":"sv3.ensemplix.ru","port":25565},{"name":"Carnage","players":80,"maximum":80,"online":true,"version":"1.5.2","ip":"sv1.ensemplix.ru","port":25564},{"name":"Cogito","players":30,"maximum":100,"online":true,"version":"1.5.2","ip":"sv2.ensemplix.ru","port":25565},{"name":"Davids","players":70,"maximum":100,"online":true,"version":"1.5.2","ip":"sv5.ensemplix.ru","port":25565},{"name":"Dedal","players":50,"maximum":100,"online":true,"version":"1.4.7","ip":"sv4.ensemplix.ru","port":25564},{"name":"HiTech","players":50,"maximum":100,"online":true,"version":"1.5.2","ip":"sv2.ensemplix.ru","port":25563},{"name":"Magnus","players":80,"maximum":100,"online":true,"version":"1.5.2","ip":"sv3.ensemplix.ru","port":25564},{"name":"Sandbox","players":0,"maximum":100,"online":true,"version":"1.5.2","ip":"sv1.ensemplix.ru","port":25565},{"name":"Theos","players":80,"maximum":80,"online":true,"version":"1.5.2","ip":"sv4.ensemplix.ru","port":25565}]
+[{
+   "name":"Amber",
+   "players":0,
+   "maximum":100,
+   "online":false,"version":"1.4.7",
+   "ip":"sv3.ensemplix.ru",
+   "port":25565
+ },
+ { "name":"Carnage",
+   "players":80,
+   "maximum":80,
+   "online":true,
+   "version":"1.5.2",
+   "ip":"sv1.ensemplix.ru",
+   "port":25564
+  }]
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
