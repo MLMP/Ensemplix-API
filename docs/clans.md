@@ -3,7 +3,7 @@
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /clans/](clans.md#get-clans) | Список кланов на сервере. | - |
-| [GET /clans/:id/](clans.md#get-clanid) | Информация о клане. | - |
+| [GET /clan/:id/](clans.md#get-clanid) | Информация о клане. | - |
 
 
 ## ``` GET /clans/ ``` 
