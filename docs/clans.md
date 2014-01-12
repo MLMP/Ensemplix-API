@@ -59,51 +59,50 @@ http://api.ensemplix.ru/v2/clan/35/
 ```
 ### Пример ответа 
 ```json 
-{"clan":{
-         "name":"Yakuza",
-         "leader":"IPalexIP",
-         "greeting":"Наша группа: http://vk.com/clan_yakuza_minecraft",
-         "clan_expirence":"57100",
-         "logo":"http://ensemplix.ru/images/clans/Yakuza_logo.jpg",
-         "members":"35",
-         "clan_members":{
-              "member":{
-                  "player":"IPalexIP",
-                  "joined":"1377671224",
-                  "expirence":"100"
-              },
-              "member":{
-                  "player":"Falgroth",
-                  "joined":"1377671024",
-                  "expirence":"500"
-              },
-              "member":{
-                  "player":"DragonCHICK",
-                  "joined":"1377671024",
-                  "expirence":"56500"
-              } 
-         }
-    }
+{"clan":[{
+     "id":1,
+     "exp":336612,
+     "info":"Клан Vault99 - это...",
+     "clan":"Vault99",
+     "leader":"Vernar",
+     "members":14,
+     "greeting":"",
+     "logo":null,
+     "created":1385965448
+}],
+"members":[{
+     "player":"cleriX",
+     "joined":1385965448,
+     "invite":false
+     },{
+     "player":"diamond7person",
+     "joined":1385965448,
+     "invite":false
+     },{
+     "player":"EvgeniyRus",
+     "joined":1385965448,
+     "invite":false
+     }]
 }
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
-| name      | Название клана. |
+| id        | Уникальный индификатор клана. |
+| exp       | Опыт клана. |
+| clan      | Название клана. |
 | leader    | Лидер клана. |
 | greeting  | Приветствие клана. |
-| clan_expirence  | Опыт клана. |
 | logo      | Ссылка на логотип клана. |
 | members   | Количество человек состоящих в клане. |
-| clan_members | Список членов клана. |
 
-#### Описание параметров clan_members
+#### Описание параметров members
 
 | Параметры | Пояснение |
 | --------- | --------- |
 | player    | Ник игрока. |
 | joined    | Время в unix timestamp когда игрок вступил в клан. |
-| expirence | Количество опыта у игрока, которое он вносит в клан. |
+| invite    | Может ли игрок приглашать в клан. |
 
 ### Возможные ошибки
 | Ошибка | Пояснение |
