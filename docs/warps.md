@@ -8,7 +8,7 @@
 | [GET /warps/location/](warps.md#get-warpslocation) | Получение информации о ближайший варпах. | - |
 | [GET /warps/player/](warps.md#get-warpsplayer) | Варпы игрока. | - |
 
-# ``` GET /warp/ ``` 
+# ``` GET /warp/:warp/:world/ ``` 
 Информация о варпе.
 
 ### Параметры запроса
