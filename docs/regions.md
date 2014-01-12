@@ -4,62 +4,45 @@
 
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /regions/info/](regions.md#get-regionsinfo) | Информация о регионе. | - |
-| [GET /regions/search/](regions.md#get-regionssearch) | Поиск регионов по названию. | - |
+| [GET /region/:region/:world/](regions.md#get-regionregionworld) | Информация о регионе. | - |
+| [GET /regions/](regions.md#get-regions) | Информация о регионах. |
 | [GET /regions/location/](regions.md#get-regionslocation) | Получение информации о ближайший регионах. | - |
 | [GET /regions/player/](regions.md#get-regionsplayer) | Информация о регионах игрока. | - |
 
 
-## ``` GET /regions/info/ ``` 
+## ``` GET /region/:region/:world/ ``` 
 Возвращает информацию о регионе.
 
 ### Параметры
 
 | Параметры | Необходимость | Пояснение |
 | --------- | ------------- | --------- |
-| name      | Обязательно.  | Название региона. |
+| region    | Обязательно.  | Название региона. |
 | world     | Обязательно.  | Игровой мир. |
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/regions/info/spawn4/
+http://api.ensemplix.ru/v2/region/spawn/Sandbox/
 ```
 
 ### Пример ответа 
 ```json 
 {"region": {
-    "size": {
-         "minX":"-35",
-         "minY":"44",
-         "minZ":"-344",
-         "maxX":"-22",
-         "maxY":"114",
-         "maxZ":"-335",
-         "volume":"500000"
+    "region":"spawn",
+      "min_x":-301,
+      "min_y":0,
+      "min_z":-301,
+      "max_x":300,
+      "max_y":255,
+      "max_z":300,
+      "world":"Sandbox",
+      "created":1385965569
     },
-    "owners": [
-          "V1TbOK",
-          "f1n",
-          "dj_koks"
-    ],
-    "members": [
-          "ensiriuswOw",
-          "Steb",
-          "ensiriusNyashka"
-    ],
-    "flags": [
-          "pistons",
-          "potions",
-          "no-pvp"
-    ],
-    "priority": "0",
-    "parent": "spawn",
-    "childs": [
-          "spawn1",
-          "spawn2",
-          "spawn3"
-    ],
-    "created": "1377672685"}
+    "owners":["Ibragim091986","IceZedicus","rensy","shev","Ziroy"],
+    "members":["Drakyla67","elon","NCR","UrbankZ"],
+    "flags":["ice-form","ice-melt","snow-fall","spawn-animals","spawn-mobs"],
+    "children":["spawn_metro"],
+    "parent":null
 }
 ```
 ### Пояснение параметров ответа
@@ -318,11 +301,11 @@ http://enapi.ru/2.0/regions/player/ensiriuswOw/
 | snow-melt | Отключает таяние снега. |
 | pistons  | Включает поршни. |
 
-## Описание параметров size
+## Описание параметров размера региона
 Регион состоит из 2-ух, min и max точек, которые образуют паралелипипед. У каждой точки свои x,y,z координаты.
 
 ![alt text][logo]
-[logo]: http://ensemplix.ru/images/articles/guard0.png
+[logo]: http://ru-minecraft.ru/uploads/posts/2011-08/1313088331_cuboid.png
 
 | Параметры | Пояснение |
 | --------- | --------- |
@@ -332,7 +315,6 @@ http://enapi.ru/2.0/regions/player/ensiriuswOw/
 | maxX      | Координата по оси X у точки max. |
 | maxY      | Координата по оси Y у точки max. |
 | maxZ      | Координата по оси Z у точки max. |
-| volume    | Размер региона. |
 
 
 
