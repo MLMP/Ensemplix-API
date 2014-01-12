@@ -29,22 +29,22 @@ API для работы. OAuth - позволяет получить досту�
 ### Игрок
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /player/info/:player](docs/player.md#get-playerinfo) | Информация о игроке. | - |
-| [GET /player/violations/:player](docs/player.md#get-playerviolations) | Информация о нарушениях игрока. | - |
-| [GET /player/search/:player](docs/player.md#post-playersearch) | Поиск игрока. | - |
+| [GET /player/info/:player/](docs/player.md#get-playerinfoplayer) | Информация о игроке. | - |
+| [GET /player/violations/:player/](docs/player.md#get-playerviolationsplayer) | Информация о нарушениях игрока. | - |
+| [GET /player/search/:player/](docs/player.md#get-playersearchplayer) | Поиск игрока. | - |
 
 ### Блоки
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /blocks/] (docs/blocks.md#get-blocksinfo) | Список изменений блоков. | - |
-| [GET /blocks/location/](docs/blocks.md#get-blocksinfo) | Список изменений блоков в указанных координатах. | - |
-| [GET /blocks/player/:player/](docs/blocks.md#get-blocksplayer) | Список блоков установленных игроком| - |
+| [GET /blocks/](docs/blocks.md#get-blocks) | Список изменений блоков. | - |
+| [GET /blocks/location/](docs/blocks.md#get-blockslocation) | Список изменений блоков в указанных координатах. | - |
+| [GET /blocks/player/:player/](docs/blocks.md#get-blocksplayerplayer) | Список блоков установленных игроком| - |
 
 ### Кланы
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /clans/](docs/clans.md#get-clans) | Список кланов на сервере. | - |
-| [GET /clan/:id](docs/clans.md#get-clan) | Информация о клане. | - |
+| [GET /clan/:id/](docs/clans.md#get-clanid) | Информация о клане. | - |
 
 ###Магазин
 | Метод | Описание | OA2 |
@@ -64,10 +64,10 @@ API для работы. OAuth - позволяет получить досту�
 ### Регионы
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /region/:region/:world](docs/regions.md#get-region.md) | Информация о регионе. | - |
-| [GET /regions/](docs/regions.md) | Информация о регионах. | - |
+| [GET /region/:region/:world/](docs/regions.md#get-regionregionworld) | Информация о регионе. | - |
+| [GET /regions/](docs/regions.md#get-regions) | Информация о регионах. |
 | [GET /regions/location/](docs/regions.md#get-regionslocation) | Получение информации о ближайший регионах. | - |
-| [GET /regions/player/:player](docs/regions.md#get-regionsplayer) | Информация о регионах игрока. | - |
+| [GET /regions/player/:player/](docs/regions.md#get-regionsplayerplayer) | Информация о регионах игрока. | - |
 
 ### Сервер
 | Метод | Описание | OA2 |
@@ -76,7 +76,7 @@ API для работы. OAuth - позволяет получить досту�
 | [GET /server/bans/](docs/server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](docs/server.md#get-servernews) | Новости сервера. | - |
 | [GET /server/launcher/](docs/server.md#get-serverlauncher) | Версия лаунчера. | - |
-| [GET /server/client/](docs/server.md#getserverclient) | Версия сборки клиента. | - |
+| [GET /server/bundle/](docs/server.md#get-serverbundle) | Версия основного плагина. | - |
 
 
 
