@@ -4,15 +4,12 @@
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /server/game/](server.md#get-servergame) | Информация о игровых серверах. | - |
-| [GET /server/web/](server.md#get-serverweb) | Информация о посетителях сайта. | - |
-| [GET /server/events/](server.md#get-serverevents) | События за последние время на сервере. | - |
-| [GET /server/stats/](server.md#get-serverstats) | Различная статистика сервера. | - |
 | [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](server.md#get-servernews) | Новости сервера. | - |
 | [GET /server/launcher/](server.md#get-serverlauncher) | Версия лаунчера. | - |
 | [GET /server/client/](server.md#getserverclient) | Версия сборки клиента. | - |
 
-## ``` GET /server/game/ ``` 
+# ``` GET /server/game/ ``` 
 Информация о игровых серверах. Обновление информации о статусе и игроках происходит раз в минуту.
 
 ### Параметры
@@ -21,138 +18,46 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/server/game/
+http://api.ensemplix.ru/v2/server/game/
 ```
 ### Пример ответа 
 ```json 
-[{
-   "name":"Amber",
-   "players":0,
-   "maximum":100,
-   "online":false,
-   "version":"1.4.7",
-   "ip":"sv3.ensemplix.ru",
-   "port":25565
-},
-{ 
-   "name":"Carnage",
-   "players":80,
-   "maximum":80,
-   "online":true,
-   "version":"1.5.2",
-   "ip":"sv1.ensemplix.ru",
-   "port":25564
-}]
+{
+    "id":1,
+    "name":"Sandbox",
+    "players":67,
+    "maximum":100,
+    "online":true,
+    "ip":"sv1.ensemplix.ru",
+    "port":25565,
+    "server_type":"classic",
+    "world":"Sandbox",
+    "map":"http://map.ensemplix.ru",
+    "folder":"old",
+    "server_version":"1.5.2",
+    "client_version":"1.1",
+    "download":"http://96922.selcdn.ru/Ensemplix/old.zip"
+}
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
+| id        | Уникальный индификатор сервера. |
 | name      | Название сервера. |
-| online    | Статус сервера. true - доступен. false - не доступен. |
 | players   | Игроков на сервере. |
 | maximum   | Максимальное количество игроков на спавне. |
+| online    | Статус сервера. true - доступен. false - не доступен. |
 | ip        | Ip Адрес на котором работает сервер. |
 | port      | Порт на котором работает сервер. |
-| version   | Версия сервера. |
+| server_type | Тип сервера. |
+| world | Основной мир на сервере. | 
+| map | Онлайн карта сервера. |
+| folder | Папка в которой находится игровой клиент сервера. |
+| server_version | Версия сервера. |
+| client_version | Версия клиента. |
+| download | Ссылка для скачивания клиента. |
 
-## ``` GET /server/web/ ``` 
-Информация о посетителях сайта
-
-### Параметры
-
-Параметры не нужны.
-
-### Пример запроса
-``` 
-http://enapi.ru/2.0/server/web/
-```
-### Пример ответа 
-```json 
-{"web":{
-    "guests":"49",
-    "online":"73",
-    "players":{
-           "ensiriuswOw",
-           "ensiriusNyashka",
-           "Steb",
-           "dosser",
-           "qw33"
-    },
-    "total":"122"}
-}
-```
-### Пояснение параметров ответа
-| Параметры | Пояснение |
-| --------- | --------- |
-| guests    | Количество гостей на сайте. |
-| online    | Количество игроков на сайте. |
-| players   | Список игроков на сайте. |
-| total     | Всего посетителей на сайте. |
-
-
-## ``` GET /server/events/ ``` 
-Различные важные события в жизни сервера.
-
-### Параметры
-| Параметры | Необходимость | Пояснение |
-| --------- | ------------- | --------- |
-| offset    | Опционально.  | Начало от куда делать выборку событий. По умолчанию 0. |
-
-### Пример запроса
-``` 
-http://enapi.ru/2.0/server/events/
-```
-### Пример ответа 
-```json 
-{
-     {
-        "message":"dosser был исключен из состава модераторов",
-        "created":"1377705038"
-     },
-     {
-        "message":"SatoAV приобрел Super-Vip",
-        "created":"1377705008"
-     }
-}
-```
-### Пояснение параметров ответа
-| Параметры | Пояснение |
-| --------- | --------- |
-| message   | Событие.  |
-| created   | Время в unix timestamp когда было создано событие. |
-
-## ``` GET /server/stats/ ``` 
-Различная статстика собранная сервером.
-
-### Параметры
-
-Параметры не нужны.
-
-### Пример запроса
-``` 
-http://enapi.ru/2.0/server/stats/
-```
-### Пример ответа 
-```json 
-{
-      "played":"6546456546",
-      "expirence":"4354379097",
-      "commands":"243543397",
-      "chat":"43543797",
-      "coins":"43543797"
-}
-```
-
-### Статистика
-| Параметр | Пояснение |
-| --------- | --------- |
-| played    | Количество секунд, которое провели на сервере игроки за все время.  |
-| expirence | Опыт, который получили все игроки на сервере |
-| commands  | Количество выполненых команд всеми игроками |
-| chat      | Количетсво сообщений в чат, оставленных всеми игроками |
-| coins     | Количество койнов у всех игроков |
-
-## ``` GET /server/bans/ ``` 
+# ``` GET /server/bans/ ``` 
 Список забаненных игроков на сервере.
 
 ### Параметры
@@ -162,7 +67,7 @@ http://enapi.ru/2.0/server/stats/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/server/bans/
+http://api.ensemplix.ru/v2/server/bans/
 ```
 ### Пример ответа 
 ```json 
@@ -188,14 +93,15 @@ http://enapi.ru/2.0/server/bans/
 | reason    | Причина блокировки. |
 | admin     | Админ который забанил игрока. |
 | till      | Время в unix timestamp когда игрок будет разбанен. Что бы бан снялся, игрок должен зайти на сервер. Если -1, то забаненен навсегда. |
-## ``` GET /server/news/ ``` 
+
+# ``` GET /server/news/ ``` 
 Последние 5 новостей сервера.
 ### Параметры
 Параметры не нужны.
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/server/news/
+http://api.ensemplix.ru/v2/server/news/
 ```
 ### Пример ответа 
 ```json 
@@ -228,7 +134,7 @@ http://enapi.ru/2.0/server/news/
 | views | Количество просмотров новости. |
 | comments | Количество комментарияв к новости. |
 
-## ``` GET /server/launcher/ ``` 
+# ``` GET /server/launcher/ ``` 
 Версия лаунчера.
 
 ### Параметры
@@ -236,7 +142,7 @@ http://enapi.ru/2.0/server/news/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/server/launcher/
+http://api.ensemplix.ru/v2/server/launcher/
 ```
 ### Пример ответа 
 ```json 
@@ -247,22 +153,25 @@ http://enapi.ru/2.0/server/launcher/
 | --------- | --------- |
 | version   | Версия лаунчера. |
 
-## ``` GET /server/client/ ``` 
-Версия сбоорки клиента.
+# ``` GET /server/bundle/ ``` 
+Версия основого плагина. 
 
 ### Параметры
 Параметры не нужны.
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/server/client/
+http://api.ensemplix.ru/v2/server/bundle/
 ```
 ### Пример ответа 
 ```json 
-{"version":"1.6"}
+{ 
+  "bundle_version":"1.2.1",
+  "bundle_url":"http://plugins.ensemplix.ru/Bundle-1.2.1.jar"
+}
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
-| version   | Версия сборки клиента. |
-
+| bundle_version   | Версия основого плагина. |
+| bundle_url | Сссылка для скачивания плагина, доступная только серверам. |
