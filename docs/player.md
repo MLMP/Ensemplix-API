@@ -6,7 +6,7 @@
 | [GET /player/violations/:player/](player.md#get-playerviolationsplayer) | Информация о нарушениях игрока. | - |
 | [GET /player/search/:player/](player.md#post-playersearchplayer) | Поиск игрока. | - |
 
-# ``` GET /player/info/:player ``` 
+# ``` GET /player/info/:player/ ``` 
 Вся информация об игроке.
 
 ### Параметры запроса
@@ -80,7 +80,7 @@ http://enapi.ru/2.0/player/info/ensiriuswOw/
 | 6         | Администратор| Выдается модераторам, которые проявили себя наилучщим образом. |
 | 7         | Главный администратор| Выдается если переспать с Сириусом. |
 
-# ``` GET /player/violations/:player ``` 
+# ``` GET /player/violations/:player/ ``` 
 Информация о нарушениях игрока, а так же амнистиях.
 ### Параметры запроса
 | Параметры | Необходимость | Пояснение |
@@ -123,7 +123,7 @@ http://enapi.ru/2.0/player/violations/ensiriuswOw/
 | Player not exists. | Указанный игрок не существует. |
 
 
-# ``` GET /player/search/:player ``` 
+# ``` GET /player/search/:player/ ``` 
 Поиск игроков.
 ### Параметры запроса
 | Параметры | Необходимость | Пояснение |
