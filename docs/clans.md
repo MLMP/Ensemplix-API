@@ -3,7 +3,7 @@
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /clans/](clans.md#get-clans) | Список кланов на сервере. | - |
-| [GET /clans/info/](clans.md#get-clan) | Информация о клане. | - |
+| [GET /clans/info/](clans.md#get-clanid) | Информация о клане. | - |
 
 
 ## ``` GET /clans/ ``` 
@@ -55,7 +55,7 @@ http://api.ensemplix.ru/v2/clans/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/clans/info/35/
+http://api.ensemplix.ru/v2/clan/35/
 ```
 ### Пример ответа 
 ```json 
