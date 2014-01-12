@@ -83,7 +83,7 @@ http://api.ensemplix.ru/v2/player/info/ensiriuswOw/
 
 ### Пример запроса
 ``` 
-http://api.ensemplix.ru/v2/player/violations/ensiriuswOw
+http://api.ensemplix.ru/v2/player/violations/ensiriuswOw/
 ```
 ### Пример ответа 
 ```json 
@@ -119,7 +119,7 @@ http://api.ensemplix.ru/v2/player/violations/ensiriuswOw
 
 ### Пример запроса
 ```
-http://api.ensemplix.ru/v2/player/search/debug
+http://api.ensemplix.ru/v2/player/search/debug/
 ```
 
 ### Пример ответа 
