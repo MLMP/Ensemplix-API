@@ -58,7 +58,7 @@ http://api.ensemplix.ru/v2/warp/shop/Sandbox/
 | Please provide warp. | Необходимо указать варп. |
 | Please provide world. | Необходимо указать игровой мир. |
 
-## ``` GET /warps/location/ ``` 
+# ``` GET /warps/location/ ``` 
 Получение информации о ближайший варпах.
 
 ### Параметры запроса
