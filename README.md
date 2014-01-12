@@ -50,16 +50,16 @@ API для работы. OAuth - позволяет получить досту�
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /shops/](docs/shop.md#get-shops) | История магазинов. | - |
-| [GET /shops/location](docs/shop.md#get-shopslocation) | История магазинов в указанном месте. | - |
-| [GET /shops/player/:player](docs/shop.md#getshopsplayer) | Историю магазина игрока. | - |
+| [GET /shops/location/](docs/shop.md#get-shopslocation) | История магазинов в указанном месте. | - |
+| [GET /shops/player/:player](docs/shop.md#get-shopsplayerplayer) | Историю магазина игрока. | - |
 
 ### Варпы
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /warp/:warp/:world](docs/warps.md#get-warp.md) | Информация о варпе. | - |
-| [GET /warps/](docs/warps.md) | Информация о варпах. | - |
+| [GET /warp/:warp/:world/](docs/warps.md#get-warpwarpworld) | Информация о варпе. | - |
+| [GET /warps/](docs/warps.md#get-warps) | Информация о варпах. |
 | [GET /warps/location/](docs/warps.md#get-warpslocation) | Получение информации о ближайший варпах. | - |
-| [GET /warps/player/:player/](docs/warps.md#get-warpsplayer) | Варпы игрока. | - |
+| [GET /warps/player/](docs/warps.md#get-warpsplayer) | Варпы игрока. | - |
 
 ### Регионы
 | Метод | Описание | OA2 |
