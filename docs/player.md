@@ -47,7 +47,7 @@ http://api.ensemplix.ru/v2/player/info/ensiriuswOw/
 | registration | Время регистрации в unix timestamp. |
 | last_login | Время последней авторизации на сайте в unix timestamp. |
 | online | Статус игрока. true - на сайте. false - оффлайн. |
-| logo_url   | Аватарка игрока |
+| logo_url   | Аватарка игрока. |
 | clan   | Клан игрока, если игрок состоит в клане. |
 | coins  | Баланс койнов у игрока. |
 | experience | Всего получено опыта игроком. |
@@ -61,7 +61,6 @@ http://api.ensemplix.ru/v2/player/info/ensiriuswOw/
 | ------ | --------- |
 | Please provide player. | Укажите ник игрока. |
 | Player not found. | Указанный игрок не существует. |
-
 
 ### Ранги
 | Уровень   | Ранг игрока | Пояснение |
@@ -80,7 +79,7 @@ http://api.ensemplix.ru/v2/player/info/ensiriuswOw/
 ### Параметры запроса
 | Параметры | Необходимость | Пояснение |
 | --------- | ------------- | --------- |
-| player      | Обязательно.  | Ник игрока. |
+| player    | Обязательно.  | Ник игрока. |
 
 ### Пример запроса
 ``` 
@@ -100,6 +99,7 @@ http://api.ensemplix.ru/v2/player/violations/ensiriuswOw
   }
 }
 ```
+
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
@@ -111,39 +111,21 @@ http://api.ensemplix.ru/v2/player/violations/ensiriuswOw
 
 # ``` GET /player/search/:player/ ``` 
 Поиск игроков.
+
 ### Параметры запроса
 | Параметры | Необходимость | Пояснение |
 | --------- | ------------- | --------- |
-| search    | Обязательно.  | Поисквой запроос. |
+| player    | Обязательно.  | Ник который ищем. |
+
 ### Пример запроса
 ```
-POST search ensi
-
-http://enapi.ru/2.0/player/search/
+http://api.ensemplix.ru/v2/player/search/debug
 ```
+
 ### Пример ответа 
 ```json 
-{"search":{
-    "players":{
-        "ensi",
-        "Ensidia",
-        "ensientminer",
-        "Ensiferum",
-        "ENSIiK",
-        "EnsiK",
-        "ENSIK123",
-        "EnsikCool",
-        "ensil",
-        "Ensiman20010",
-        "Ensin",
-        "Ensininka",
-        "ensiq",
-        "ensiq41",
-        "ensirius"}
-    }
-}
+["debug","debug0","debug10","debug100","debug2","debug21","debug22"]
 ```
+
 ### Пояснение параметров ответа
-| Параметры | Пояснение |
-| --------- | --------- |
-| players   | Список игроков найденных по запросу. |
+Список игроков найденных по запросу.
