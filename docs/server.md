@@ -71,7 +71,6 @@ http://api.ensemplix.ru/v2/server/bans/
 ```
 ### Пример ответа 
 ```json 
-{
 {"bans":[{
     "id":16207,
     "till":-1,
