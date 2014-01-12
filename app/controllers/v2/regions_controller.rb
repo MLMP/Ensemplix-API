@@ -21,7 +21,7 @@ class V2::RegionsController < ApplicationController
       region['children'] = Child.where("parent = ? AND world = ?", region_name, world).pluck("child")
       parent = Child.select("parent").where("child = ? AND world = ?", region_name, world).take()
 
-      if (!parent.nil?)
+      if !parent.nil?
         region['parent'] = parent['parent']
       else
         region['parent'] = nil
@@ -36,7 +36,7 @@ class V2::RegionsController < ApplicationController
 
   end
 
-  # GET /region/:region/:world
+  # GET /region/:region/:world/
   # Информация о регионе.
   def info
     if !params.has_key? :region
@@ -103,15 +103,16 @@ class V2::RegionsController < ApplicationController
       @regions = @regions.offset(params[:offset])
     end
 
-    @region.find_each do |region|
-      id = region['id']
-      region['owners'] = Owner.where("region_id = ?", id).pluck("player")
-      region['members'] = Member.where("region_id = ?", id).pluck("player")
-      region['flags'] = Flag.where("region_id = ?", id).pluck("flag")
-      region['children'] = Child.where("parent_id = ?", id).pluck("child")
-      parent = Child.select("parent").where("child_id = ?", id).take()
+    @regions.each do |region|
+      region_name = region['region']
+      world = region['world']
+      region['owners'] = Owner.where("region = ? AND world = ?", region_name, world).pluck("player")
+      region['members'] = Member.where("region = ? AND world = ?", region_name, world).pluck("player")
+      region['flags'] = Flag.where("region = ? AND world = ?", region_name, world).pluck("flag")
+      region['children'] = Child.where("parent = ? AND world = ?", region_name, world).pluck("child")
+      parent = Child.select("parent").where("child = ? AND world = ?", region_name, world).take()
 
-      if (!parent.nil?)
+      if !parent.nil?
         region['parent'] = parent['parent']
       else
         region['parent'] = nil
@@ -138,7 +139,7 @@ class V2::RegionsController < ApplicationController
 
   end
 
-  # GET /regions/player/:player
+  # GET /regions/player/:player/
   # Информация о регионах игрока.
   def player
     if !params.has_key? :player

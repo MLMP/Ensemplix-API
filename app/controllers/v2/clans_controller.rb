@@ -27,7 +27,7 @@ class V2::ClansController < ApplicationController
     end
   end
 
-  # GET /clan/:id
+  # GET /clan/:id/
   # Информация о клане.
   def info
 
@@ -37,7 +37,13 @@ class V2::ClansController < ApplicationController
       @clan = Clan.where("id = ?", params[:id])
 
       if !@clan.empty?
-        render json: @clan
+        @members = ClanMember.where("`clans`.`id` = ?", params[:id]).joins("INNER JOIN `clans`
+          ON (`clans`.`clan` = `clans_members`.`clan`)").select("player", "joined", "invite")
+
+        render :json => {
+            :clan => @clan,
+            :members => @members
+        }
       else
         render :json => {
             :error => "Clan with provided id not found.",

@@ -11,7 +11,7 @@ class V2::ServerController < ApplicationController
   # Информация о игровых серверах. Обновление информации о статусе и игроках
   # происходит раз в минуту.
   def game
-    @game = Server.joins("LEFT JOIN `servers_types` ON (`servers`.`server_type` = `servers_types`.`server_type`)")
+    @game = Server.select("*").joins("LEFT JOIN `servers_types` ON (`servers_types`.`server_type` = `servers`.`server_type`)")
     render json: @game
   end
 
@@ -41,6 +41,14 @@ class V2::ServerController < ApplicationController
 
     @count = @bans.count()
     @bans = @bans.limit(100)
+
+    if @bans.empty?
+      render :json => {
+          :error => "No bans found.",
+          :offset => params[:offset]
+      }, :status => 422
+      return;
+    end
 
     render :json => {
         :bans => @bans,

@@ -21,7 +21,9 @@ class V2::BlocksController < ApplicationController
           :error => "No blocks found.",
           :offset => params[:offset],
           :world => params[:world],
-          :type => params[:type]
+          :type => params[:type],
+          :id => params[:id],
+          :data => params[:data]
       }
       return;
     end
@@ -30,13 +32,14 @@ class V2::BlocksController < ApplicationController
         :blocks => @blocks,
         :offset => params[:offset],
         :world => params[:world],
-        :type => params[:type]
+        :type => params[:type],
+        :id => params[:id],
+        :data => params[:data]
     }
   end
 
   # GET /blocks/location/
-  # Список изменений в указанных координатах. Показывает как
-  # установленные блоки, так и блоки которые были сломаны.
+  # Список изменений блоков в указанных координатах.
   def location
     if !params.has_key? :x
       render json: {error: "Please provide X coordinate."}, :status => 422
@@ -79,7 +82,9 @@ class V2::BlocksController < ApplicationController
           :y => params[:y],
           :z => params[:z],
           :world => params[:world],
-          :type => params[:type]
+          :type => params[:type],
+          :id => params[:id],
+          :data => params[:data]
       }, :status => 422
       return;
     end
@@ -92,11 +97,13 @@ class V2::BlocksController < ApplicationController
         :y => params[:y],
         :z => params[:z],
         :world => params[:world],
-        :type => params[:type]
+        :type => params[:type],
+        :id => params[:id],
+        :data => params[:data]
     }
   end
 
-  # GET /blocks/player/:player
+  # GET /blocks/player/:player/
   # Список блоков установленных игроком.
   def player
     if !params.has_key? :player
@@ -125,7 +132,9 @@ class V2::BlocksController < ApplicationController
           :offset => params[:offset],
           :player => params[:player],
           :world => params[:world],
-          :type => params[:type]
+          :type => params[:type],
+          :id => params[:id],
+          :data => params[:data]
       }, :status => 422
       return;
     end
@@ -136,7 +145,9 @@ class V2::BlocksController < ApplicationController
         :offset => params[:offset],
         :player => params[:player],
         :world => params[:world],
-        :type => params[:type]
+        :type => params[:type],
+        :id => params[:id],
+        :data => params[:data]
     }
 
   end

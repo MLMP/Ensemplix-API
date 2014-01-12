@@ -1,7 +1,7 @@
 class V2::ShopsController < ApplicationController
 
   # GET /shops/
-  # История магазинов
+  # История магазинов.
   def index
     @shop = Shop.order("id DESC")
     @shop = @shop.where("world = ?", params[:world]) if params.has_key? :world
@@ -21,7 +21,7 @@ class V2::ShopsController < ApplicationController
 
     if @shop.nil?
       render :json => {
-          :error => "No shop history found.",
+          :error => "No operations found.",
           :offset => params[:offset],
           :world => params[:world],
           :operation => params[:operation],
@@ -42,7 +42,7 @@ class V2::ShopsController < ApplicationController
     }
   end
 
-  # GET /shops/location
+  # GET /shops/location/
   # История магазинов в указанном месте.
   def location
     if !params.has_key? :x
@@ -61,11 +61,10 @@ class V2::ShopsController < ApplicationController
     end
 
     @shop = Shop.order("id DESC")
-    @shop = @shop.where("world = ?", params[:world]) if params.has_key? :world
+    @shop = @shop.where("x < :x AND x > :x - 250 AND z < :z + 250 AND z > :z - 250 AND world = :world",
+                        x: params[:x], z: params[:z], world: params[:world])
     @shop = @shop.where("operation = ?", params[:operation]) if params.has_key? :operation
-    @shop = @shop.where("x = ?", params[:x])
     @shop = @shop.where("y = ?", params[:y]) if params.has_key? :y
-    @shop = @shop.where("z = ?", params[:z])
     @shop = @shop.joins("INNER JOIN `items` ON (`items`.`item` = `logs_shop`.`item`)")
     @shop = @shop.where("`items`.`id` = ?", params[:id]) if params.has_key? :id
     @shop = @shop.where("`items`.`data` = ?", params[:data]) if params.has_key? :data
@@ -81,7 +80,7 @@ class V2::ShopsController < ApplicationController
 
     if @shop.nil?
       render :json => {
-          :error => "No shop history found.",
+          :error => "No operations found.",
           :offset => params[:offset],
           :world => params[:world],
           :operation => params[:operation],
@@ -102,7 +101,7 @@ class V2::ShopsController < ApplicationController
     }
   end
 
-  # GET /shops/player/:player
+  # GET /shops/player/:player/
   # Историю магазина игрока.
   def player
     if !params.has_key? :player
@@ -132,7 +131,7 @@ class V2::ShopsController < ApplicationController
 
     if @shop.nil?
       render :json => {
-          :error => "No shop history found.",
+          :error => "No operations found.",
           :offset => params[:offset],
           :player => params[:player],
           :world => params[:world],

@@ -1,6 +1,6 @@
 class V2::PlayerController < ApplicationController
 
-  # GET /player/info/:player
+  # GET /player/info/:player/
   # Информация о игроке.
   def info
     if !params.has_key? :player
@@ -33,7 +33,7 @@ class V2::PlayerController < ApplicationController
     render json: @player
   end
 
-  # GET /player/violations/:player
+  # GET /player/violations/:player/
   # Информация о нарушениях игрока.
   def violations
     if !params.has_key? :player
@@ -50,6 +50,7 @@ class V2::PlayerController < ApplicationController
     }
   end
 
+
   # GET /player/search/:player
   # Поиск игрока.
   def search
@@ -60,7 +61,7 @@ class V2::PlayerController < ApplicationController
 
     if params[:player].length < 4
       render :json => {
-          :error => "Minimum player name length 4",
+          :error => "Minimum player name length 4.",
           :player => params[:player],
       }
       return;

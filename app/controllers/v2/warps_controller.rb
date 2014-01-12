@@ -23,7 +23,7 @@ class V2::WarpsController < ApplicationController
 
   end
 
-  # GET /warp/:warp/:world
+  # GET /warp/:warp/:world/
   # Информация о варпе.
   def info
     if !params.has_key? :warp
@@ -98,7 +98,7 @@ class V2::WarpsController < ApplicationController
 
   end
 
-  # GET /warps/player/:player
+  # GET /warps/player/:player/
   # Варпы игрока.
   def player
     if !params.has_key? :player
