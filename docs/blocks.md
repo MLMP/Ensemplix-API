@@ -3,9 +3,9 @@
 
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
-| [GET /blocks/](docs/blocks.md#get-blocks) | Список изменений блоков. | - |
-| [GET /blocks/location/](docs/blocks.md#get-blockslocation) | Список изменений блоков в указанных координатах. | - |
-| [GET /blocks/player/:player/](docs/blocks.md#get-blocksplayer) | Список блоков установленных игроком| - |
+| [GET /blocks/](blocks.md#get-blocks) | Список изменений блоков. | - |
+| [GET /blocks/location/](blocks.md#get-blockslocation) | Список изменений блоков в указанных координатах. | - |
+| [GET /blocks/player/:player/](blocks.md#get-blocksplayer) | Список блоков установленных игроком| - |
 
 ## ``` GET /blocks/ ```
 Список изменений блоков.
