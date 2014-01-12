@@ -134,7 +134,7 @@ http://api.ensemplix.ru/v2/blocks/location/?x=0&z=0&world=Sandbox
 ### Пример запроса
 
 ``` 
-http://api.ensemplix.ru/v2/blocks/Ruslan7227
+http://api.ensemplix.ru/v2/blocks/player/Ruslan7227/
 ```
 
 ### Пример ответа 
