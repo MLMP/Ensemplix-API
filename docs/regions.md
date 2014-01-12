@@ -7,7 +7,7 @@
 | [GET /region/:region/:world/](regions.md#get-regionregionworld) | Информация о регионе. | - |
 | [GET /regions/](regions.md#get-regions) | Информация о регионах. |
 | [GET /regions/location/](regions.md#get-regionslocation) | Получение информации о ближайший регионах. | - |
-| [GET /regions/player/](regions.md#get-regionsplayer) | Информация о регионах игрока. | - |
+| [GET /regions/player/:player/](regions.md#get-regionsplayer) | Информация о регионах игрока. | - |
 
 
 # ``` GET /region/:region/:world/ ``` 
@@ -69,55 +69,38 @@ http://api.ensemplix.ru/v2/region/spawn/Sandbox/
 | Please provide region. | Необходимо указать регион. |
 | Please provide world. | Необходимо указать игровой мир. |
 
-# ``` GET /regions/search/ ``` 
-Возвращает список регионов по поисковому запросу.
-### Пример запроса
-``` 
-http://enapi.ru/2.0/regions/search/spawn/
-```
+# ``` GET /regions/``` 
+Информация о регионах.
+
 ### Параметры запроса
 
 | Параметры | Необходимость | Пояснение |
 | --------- | ------------- | --------- |
-| region    | Обязательно.  | Поисковой запрос по названию региона. |
+| world     | Опционально.  | Игровой мир. |
+| offset    | Опционально.  | Начало выборки регионов. |
 
+### Пример запроса
+``` 
+http://api.ensemplix.ru/v2/regions/
+```
 ### Пример ответа 
 ```json 
-{
-    "region": {
-        "size": {
-             "minX":"-35",
-             "minY":"44",
-             "minZ":"-344",
-             "maxX":"-22",
-             "maxY":"114",
-             "maxZ":"-335",
-             "volume":"500000"
-        },
-        "owners": [
-              "V1TbOK",
-              "f1n",
-              "dj_koks"
-        ],
-        "members": [
-              "ensiriuswOw",
-              "Steb",
-              "ensiriusNyashka"
-        ],
-        "flags": [
-              "pistons",
-              "potions",
-              "no-pvp"
-        ],
-        "priority": "0",
-        "parent": "spawn",
-        "childs": [
-              "spawn1",
-              "spawn2",
-              "spawn3"
-        ],
-        "created": "1377672685"
-    }
+{"region": {
+    "region":"spawn",
+      "min_x":-301,
+      "min_y":0,
+      "min_z":-301,
+      "max_x":300,
+      "max_y":255,
+      "max_z":300,
+      "world":"Sandbox",
+      "created":1385965569
+    },
+    "owners":["Ibragim091986","IceZedicus","rensy","shev","Ziroy"],
+    "members":["Drakyla67","elon","NCR","UrbankZ"],
+    "flags":["ice-form","ice-melt","snow-fall","spawn-animals","spawn-mobs"],
+    "children":["spawn_metro"],
+    "parent":null
 }
 ```
 ### Пояснение параметров ответа
@@ -140,63 +123,43 @@ http://enapi.ru/2.0/regions/search/spawn/
 ### Возможные ошибки
 | Ошибка | Пояснение |
 | ------ | --------- |
-| No regions found. | Регионов не найдено. |
-| Please provide region. | Укажите название региона, о котором Вы хотите получить информацию. |
+| No regions found. | В радиусе указанных координат нет регионов. |
 
 # ``` GET /regions/location/ ``` 
-Отображает список регионов в указанных коориданатах в радиусе 250 блоков, если не указанн радиус поиска.
-Максимальный радиус поиска 500 блоков.
+Получение информации о ближайший регионах.
 
 ### Параметры запроса
 
 | Параметры | Необходимость | Пояснение |
 | --------- | ------------- | --------- |
-| radius    | Опционально.  | Радиус поиска варпов. По умолчанию 250. Максимально 500. |
 | x         | Обязательно.  | Координата по оси X. |
 | z         | Обязательно.  | Координата по оси Z. |
 | world     | Обязательно.  | Игровой мир. |
+| y         | Опционально.  | Координата по оси Y. |
+| offset    | Опционально.  | Начало выборки регионов. |
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/regions/location/x/0/y/0/z/0/world/HiTech152/
+http://api.ensemplix.ru/v2/regions/location/?x=250&z=250&world=Sandbox
 ```
 ### Пример ответа 
 ```json 
-{
-    "region": {
-        "size": {
-             "minX":"-35",
-             "minY":"44",
-             "minZ":"-344",
-             "maxX":"-22",
-             "maxY":"114",
-             "maxZ":"-335",
-             "volume":"500000"
-        },
-        "owners": [
-              "V1TbOK",
-              "f1n",
-              "dj_koks"
-        ],
-        "members": [
-              "ensiriuswOw",
-              "Steb",
-              "ensiriusNyashka"
-        ],
-        "flags": [
-              "pistons",
-              "potions",
-              "no-pvp"
-        ],
-        "priority": "0",
-        "parent": "spawn",
-        "childs": [
-              "spawn1",
-              "spawn2",
-              "spawn3"
-        ],
-        "created": "1377672685"
-    }
+{"region": {
+    "region":"spawn",
+      "min_x":-301,
+      "min_y":0,
+      "min_z":-301,
+      "max_x":300,
+      "max_y":255,
+      "max_z":300,
+      "world":"Sandbox",
+      "created":1385965569
+    },
+    "owners":["Ibragim091986","IceZedicus","rensy","shev","Ziroy"],
+    "members":["Drakyla67","elon","NCR","UrbankZ"],
+    "flags":["ice-form","ice-melt","snow-fall","spawn-animals","spawn-mobs"],
+    "children":["spawn_metro"],
+    "parent":null
 }
 ```
 ### Пояснение параметров ответа
@@ -224,7 +187,7 @@ http://enapi.ru/2.0/regions/location/x/0/y/0/z/0/world/HiTech152/
 | Please provide Z coordinate. | Необходимо указать координату по оси Z. |
 | Please provide world. | Необходимо указать игровой мир. |
 
-# ``` GET /regions/player/ ``` 
+# ``` GET /regions/player/:player/ ``` 
 Возвращает список регионов игрока.
 
 ### Параметры
@@ -235,67 +198,51 @@ http://enapi.ru/2.0/regions/location/x/0/y/0/z/0/world/HiTech152/
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/regions/player/ensiriuswOw/
+http://api.ensemplix.ru/v2/regions/player/ensiriuswOw/
 ```
 
 ### Пример ответа 
-```json
-{
-    "region": {
-        "size": {
-             "minX":"-35",
-             "minY":"44",
-             "minZ":"-344",
-             "maxX":"-22",
-             "maxY":"114",
-             "maxZ":"-335",
-             "volume":"500000"
-        },
-        "owners": [
-              "V1TbOK",
-              "f1n",
-              "dj_koks"
-        ],
-        "members": [
-              "ensiriuswOw",
-              "Steb",
-              "ensiriusNyashka"
-        ],
-        "flags": [
-              "pistons",
-              "potions",
-              "no-pvp"
-        ],
-        "priority": "0",
-        "parent": "spawn",
-        "childs": [
-              "spawn1",
-              "spawn2",
-              "spawn3"
-        ],
-        "created": "1377672685"
-    }
+```json 
+{"region": {
+    "region":"spawn",
+      "min_x":-301,
+      "min_y":0,
+      "min_z":-301,
+      "max_x":300,
+      "max_y":255,
+      "max_z":300,
+      "world":"Sandbox",
+      "created":1385965569
+    },
+    "owners":["Ibragim091986","IceZedicus","rensy","shev","Ziroy"],
+    "members":["Drakyla67","elon","NCR","UrbankZ"],
+    "flags":["ice-form","ice-melt","snow-fall","spawn-animals","spawn-mobs"],
+    "children":["spawn_metro"],
+    "parent":null
 }
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
 | region    | Название региона. |
-| [size](regions.md#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-size) | Данные которые относятся к размеру региона. |
-| owners    | Списоок игроков, которые владеют регионам. |
+| minX      | Координата по оси X у точки min. |
+| minY      | Координата по оси Y у точки min. |
+| minZ      | Координата по оси Z у точки min. |
+| maxX      | Координата по оси X у точки max. |
+| maxY      | Координата по оси Y у точки max. |
+| maxZ      | Координата по оси Z у точки max. |
+| created   | Время создания региона в unix timestamp. |
+| owners    | Список игроков, которые владеют регионам. |
 | members   | Список жителей в регионе. |
 | flags     | Список [флагов](regions.md#%D0%A4%D0%BB%D0%B0%D0%B3%D0%B8) в регионе. |
-| priority  | Приоритет региона. |
-| parent    | Глобальный регион. |
 | childs    | Локальные регионы. |
-| created   | Время создания региона в unix timestamp. |
+| parent    | Глобальный регион. |
 
 ### Возможные ошибки
 | Ошибка | Пояснение |
 | ------ | --------- |
 | No regions found. | Не были найдены записи о регионах у игрока. |
 | Please provide player. | Необходимо указать игрока. |
-| Player not exists. | Указанный игрок не существует. |
 
 ## Флаги
 
