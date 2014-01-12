@@ -120,7 +120,7 @@ http://api.ensemplix.ru/v2/blocks/location/?x=0&z=0&world=Sandbox
 | Please provide Z coordinate. | Необходимо указать координату по оси Z. |
 | Please provide world. | Необходимо указать игровой мир. |
 
-# ``` GET /blocks/player/:player ``` 
+# ``` GET /blocks/player/:player/ ``` 
 
 | Параметор | Необходимость | Пояснение |
 | --------- | ------------- | --------- |
