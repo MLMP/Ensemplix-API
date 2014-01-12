@@ -15,34 +15,34 @@
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/clans/
+http://api.ensemplix.ru/v2/clans/
 ```
 ### Пример ответа 
 ```json 
-{
-    "clan":{
-       "id":"1",
-       "name":"Ensemplix",
-       "leader":"eNsirius",
-       "members":"35"
-       },
-    "clan":{
-       "id":"2",
-       "name":"Hearth of Gold",
-       "leader":"Steb",
-       "members":"76"
-       }
-}
+{"clans":[{
+      "id":126,
+      "clan":"Dominion",
+      "exp":22229748,
+      "leader":"UnDead_4535",
+      "members":19
+      },{
+      "id":55,
+      "clan":"The Great Army of Socks",
+      "exp":21134793,
+      "leader":"ferzrrn",
+      "members":23
+      }]
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
-| id        | Id клана. |
+| id        | Уникальный индификатор клана. |
+| exp       | Опыт клана. |
 | name      | Название клана. |
 | leader    | Лидер клана. |
 | members   | Количество человек состоящих в клане. |
 
-## ``` GET /clans/info/ ``` 
+## ``` GET /clan/:id/ ``` 
 Возвращает подробную информацию о клане по его id.
 
 ### Параметры
