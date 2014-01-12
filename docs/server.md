@@ -7,8 +7,7 @@
 | [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](server.md#get-servernews) | Новости сервера. | - |
 | [GET /server/launcher/](server.md#get-serverlauncher) | Версия лаунчера. | - |
-| [GET /server/client/](server.md#getserverclient) | Версия сборки клиента. | - |
-| [GET /server/bundle/](server.md#getserverbundle) | Версия основного плагина. | - |
+| [GET /server/bundle/](server.md#get-serverbundle) | Версия основного плагина. | - |
 
 # ``` GET /server/game/ ``` 
 Информация о игровых серверах. Обновление информации о статусе и игроках происходит раз в минуту.
