@@ -59,7 +59,7 @@ http://api.ensemplix.ru/v2/blocks/?world=Sandbox
 ### Возможные ошибки
 | Ошибка | Пояснение |
 | ------ | --------- |
-| No blocks found. | Записей изменений по указанным координатам нет. |
+| No blocks found. | Записей изменений по указанным данным нет. |
 
 
 # ``` GET /blocks/location/ ``` 
