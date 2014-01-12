@@ -38,6 +38,7 @@ http://api.ensemplix.ru/v2/blocks/?world=Sandbox
    "created":1389531324,
    "type":1
    }]
+}
 ```
 
 ### Пояснение параметров ответа
@@ -72,34 +73,42 @@ http://api.ensemplix.ru/v2/blocks/?world=Sandbox
 
 ### Пример запроса
 ``` 
-http://enapi.ru/2.0/blocks/info/x/521/y/66/z/199/world/Davids152/
+http://api.ensemplix.ru/v2/blocks/location/?x=0&z=0&world=Sandbox
 ```
 ### Пример ответа 
 ```json 
-{"blocks":{
-    "player":"serg_next12",
-    "status": "1",
-    "id":"1",
-    "data":"0",
-    "modifed":"1377670832"}
+{"blocks":[{
+      "id":62463937,
+      "player":"Ibragim091986",
+      "block":138,
+      "data":0,
+      "x":0,
+      "y":7,
+      "z":0,
+      "world":"Sandbox",
+      "created":1388867585,
+      "type":0}]
 }
 ```
 
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
 | --------- | --------- |
+| id        | Уникальный индификатор блока. |
 | player    | Игровой ник. |
-| status    | 0 - сломали блок, 1 - поставили блок. |
-| id        | Id блока. |
+| block     | Id блока. |
 | data      | Мета-данная блока. |
-| modifed   | Время когда был изменен блок в unix timestamp формате. |
+| x         | Координата по оси X. |
+| y         | Координата по оси Y. |
+| z         | Координата по оси Z. |
+| created   | Время когда был изменен блок в unix timestamp формате. |
+| type      | 0 - сломали блок, 1 - поставили блок. |
 
 ### Возможные ошибки
 | Ошибка | Пояснение |
 | ------ | --------- |
-| No records found. | Записей изменений по указанным координатам нет. |
+| No blocks found. | Записей изменений по указанным координатам нет. |
 | Please provide X coordinate. | Необходимо указать координату по оси X. |
-| Please provide Y coordinate. | Необходимо указать координату по оси Y. |
 | Please provide Z coordinate. | Необходимо указать координату по оси Z. |
 | Please provide world. | Необходимо указать игровой мир. |
 
