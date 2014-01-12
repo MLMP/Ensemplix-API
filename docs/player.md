@@ -15,7 +15,7 @@
 | player      | Обязательно.  | Ник игрока. |
 ### Пример запроса
 ``` 
-http://api.ensemplix.ru/v2/player/info/ensiriuswOw
+http://api.ensemplix.ru/v2/player/info/ensiriuswOw/
 ```
 ### Пример ответа 
 ```json 
@@ -46,7 +46,7 @@ http://api.ensemplix.ru/v2/player/info/ensiriuswOw
 | registration | Время регистрации в unix timestamp. |
 | last_login | Время последней авторизации на сайте в unix timestamp. |
 | online | Статус игрока. true - на сайте. false - оффлайн. |
-| logo   | Аватарка игрока |
+| logo_url   | Аватарка игрока |
 | clan   | Клан игрока, если игрок состоит в клане. |
 | coins  | Баланс койнов у игрока. |
 | experience | Всего получено опыта игроком. |
