@@ -129,6 +129,8 @@ http://api.ensemplix.ru/v2/blocks/location/?x=0&z=0&world=Sandbox
 | id        | Опционально.  | Поиск операций по укзанному id блока. |
 | data      | Опционально.  | Поиск операций по укзанной метаданной блока. |
 
+### Пример запроса
+
 ``` 
 http://api.ensemplix.ru/v2/blocks/Ruslan7227
 ```
