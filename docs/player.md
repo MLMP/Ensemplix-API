@@ -4,7 +4,7 @@
 | ----- | -------- |:---:|
 | [GET /player/info/:player/](player.md#get-playerinfoplayer) | Информация о игроке. | - |
 | [GET /player/violations/:player/](player.md#get-playerviolationsplayer) | Информация о нарушениях игрока. | - |
-| [GET /player/search/:player/](player.md#post-playersearchplayer) | Поиск игрока. | - |
+| [GET /player/search/:player/](player.md#get-playersearchplayer) | Поиск игрока. | - |
 
 # ``` GET /player/info/:player/ ``` 
 Вся информация об игроке.
