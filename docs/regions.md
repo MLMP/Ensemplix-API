@@ -7,7 +7,7 @@
 | [GET /region/:region/:world/](regions.md#get-regionregionworld) | Информация о регионе. | - |
 | [GET /regions/](regions.md#get-regions) | Информация о регионах. |
 | [GET /regions/location/](regions.md#get-regionslocation) | Получение информации о ближайший регионах. | - |
-| [GET /regions/player/:player/](regions.md#get-regionsplayer) | Информация о регионах игрока. | - |
+| [GET /regions/player/:player/](regions.md#get-regionsplayerplayer) | Информация о регионах игрока. | - |
 
 
 # ``` GET /region/:region/:world/ ``` 
@@ -195,6 +195,7 @@ http://api.ensemplix.ru/v2/regions/location/?x=250&z=250&world=Sandbox
 | Параметры | Необходимость | Пояснение |
 | --------- | ------------- | --------- |
 | player    | Обязательно.  | Ник игрока. |
+| offset    | Опционально.  | Начало выборки регионов. |
 
 ### Пример запроса
 ``` 
