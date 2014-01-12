@@ -5,7 +5,7 @@
 | ----- | -------- |:---:|
 | [GET /blocks/](blocks.md#get-blocks) | Список изменений блоков. | - |
 | [GET /blocks/location/](blocks.md#get-blockslocation) | Список изменений блоков в указанных координатах. | - |
-| [GET /blocks/player/:player/](blocks.md#get-blocksplayer) | Список блоков установленных игроком| - |
+| [GET /blocks/player/:player/](blocks.md#get-blocksplayerplayer) | Список блоков установленных игроком| - |
 
 ## ``` GET /blocks/ ```
 Список изменений блоков.
