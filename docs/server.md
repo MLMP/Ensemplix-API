@@ -84,7 +84,7 @@ http://api.ensemplix.ru/v2/server/bans/
     "player":"jana",
     "reason":"3.6",
     "admin":"Ibragim091986",
-    "created":1389550129}
+    "created":1389550129
    }]
 }
 ```
