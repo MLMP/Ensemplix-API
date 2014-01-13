@@ -78,6 +78,10 @@ API для работы. OAuth позволяет получить прилож�
 | [GET /server/launcher/](docs/server.md#get-serverlauncher) | Версия лаунчера. | - |
 | [GET /server/bundle/](docs/server.md#get-serverbundle) | Версия основного плагина. | - |
 
+## Программы испольюущие Ensemplix-API
+
+Карты варпов для всех серверов http://forum.ensemplix.ru/viewtopic.php?f=101&t=64892
+
 
 
 
