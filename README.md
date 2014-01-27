@@ -78,13 +78,12 @@ API для работы. OAuth позволяет получить прилож�
 | [GET /server/launcher/](docs/server.md#get-serverlauncher) | Версия лаунчера. | - |
 | [GET /server/bundle/](docs/server.md#get-serverbundle) | Версия основного плагина. | - |
 
-## Приложения испольюущие Ensemplix-API
+## Приложения использующие Ensemplix-API
 
 Карты варпов для всех серверов http://forum.ensemplix.ru/viewtopic.php?f=101&t=64892 от web93onv
 
-
-
-
+Различная информация о игроках (используются API players/violations/regions/warps/blocks):
+http://ens.pavlo.cc
 
 
 
