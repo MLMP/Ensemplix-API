@@ -26,7 +26,7 @@ class V2::ServerController < ApplicationController
   # GET /server/news/
   # Новости сервера.
   def news
-    @news = News.last(5)
+    @news = News.order("id DESC").limit(5)
     render json: @news
   end
 
