@@ -13,19 +13,19 @@ class V2::PlayerController < ApplicationController
      `players_played`.`played`, `players_experience`.`experience`, `players_prefix`.`prefix`,
      `players_colors`.`name` as `name_color`, `players_colors`.`chat` as `chat_color`, `clans_members`.`clan`,
      `last_online`.`time` as `last_online`")
-    .joins("INNER JOIN `players_balance` ON (`players_balance`.`player` = `players`.`player`)")
-    .joins("INNER JOIN `players_played` ON (`players_played`.`player` = `players`.`player`)")
-    .joins("INNER JOIN `players_experience` ON (`players_experience`.`player` = `players`.`player`)")
-    .joins("INNER JOIN `last_online` ON (`last_online`.`player` = `players`.`player`)")
+    .joins("LEFT JOIN `players_balance` ON (`players_balance`.`player` = `players`.`player`)")
+    .joins("LEFT JOIN `players_played` ON (`players_played`.`player` = `players`.`player`)")
+    .joins("LEFT JOIN `players_experience` ON (`players_experience`.`player` = `players`.`player`)")
+    .joins("LEFT JOIN `last_online` ON (`last_online`.`player` = `players`.`player`)")
     .joins("LEFT JOIN `players_prefix` ON (`players_prefix`.`player` = `players`.`player`)")
     .joins("LEFT JOIN `players_colors` ON (`players_colors`.`player` = `players`.`player`)")
     .joins("LEFT JOIN `clans_members` ON (`clans_members`.`player` = `players`.`player`)")
     .where("`players`.`player` = ?", params[:player]) if params.has_key? :player
 
-    if @player.nil?
+    if @player.empty?
       render :json => {
           :error => "Player not found.",
-          :offset => params[:player],
+          :player => params[:player],
       }
       return;
     end
@@ -59,6 +59,8 @@ class V2::PlayerController < ApplicationController
       return;
     end
 
+    @blocks = @blocks.where("type = ?", params[:type]) if params.has_key? :type
+
     if params[:player].length < 4
       render :json => {
           :error => "Minimum player name length 4.",
@@ -69,7 +71,7 @@ class V2::PlayerController < ApplicationController
 
     @players = Player.where("`player` LIKE ?", "%" + params[:player] + "%").pluck("player")
 
-    if @players.nil?
+    if @players.empty?
       render :json => {
           :error => "Players not found.",
           :player => params[:player],

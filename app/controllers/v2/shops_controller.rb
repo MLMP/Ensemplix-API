@@ -104,7 +104,7 @@ class V2::ShopsController < ApplicationController
   # GET /shops/player/:player/
   # Историю магазина игрока.
   def player
-    if !params.has_key? :player
+    until params.has_key? :player
       render json: {error: "Please provide player."}, :status => 422
       return;
     end
@@ -114,8 +114,9 @@ class V2::ShopsController < ApplicationController
     @shop = @shop.where("world = ?", params[:world]) if params.has_key? :world
     @shop = @shop.where("operation = ?", params[:operation]) if params.has_key? :operation
 
+    @shop = @shop.where("`to` = ? OR `from` = ?", params[:player], params[:player])
 
-    @shop = @shop.joins("INNER JOIN `items` ON (`items`.`item` = `logs_shop`.`item`)")
+    @shop = @shop.joins("LEFT JOIN `items` ON (`items`.`item` = `logs_shop`.`item`)")
     @shop = @shop.where("`items`.`id` = ?", params[:id]) if params.has_key? :id
     @shop = @shop.where("`items`.`data` = ?", params[:data]) if params.has_key? :data
 

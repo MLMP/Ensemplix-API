@@ -3,22 +3,24 @@ class V2::RegionsController < ApplicationController
   # GET /regions/
   # Информация о регионах.
   def index
-    @regions = Region.where("world = ?", params[:world]) if params.has_key? :world
+    @regions = Region.all
+    @regions = @regions.where("world = ?", params[:world]) if params.has_key? :world
 
     if params.has_key? :offset
       @regions = @regions.offset(params[:offset])
     end
 
-    @count = @regions.count()
-    @regions = @regions.limit(100)
 
-    if @regions.nil?
+    if @regions.empty?
       render :json => {
           :error => "Regions not found.",
           :world => params[:world]
       }, :status => 422
       return;
     end
+
+    @count = @regions.count()
+    @regions = @regions.limit(100)
 
     @regions.each do |region|
       region_name = region['region']
