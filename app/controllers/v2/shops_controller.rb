@@ -120,15 +120,16 @@ class V2::ShopsController < ApplicationController
     @shop = @shop.where("`items`.`id` = ?", params[:id]) if params.has_key? :id
     @shop = @shop.where("`items`.`data` = ?", params[:data]) if params.has_key? :data
 
-    @count = @shop.count()
     @shop = @shop.select("`logs_shop`.*, `items`.`id` as `item_id`, `items`.`data`,
       CONCAT('http://ensemplix.ru/images/items/', IFNULL(`items`.`icon`,'default.png')) as `icon_image`")
 
-    @shop = @shop.limit(100)
 
     if params.has_key? :offset
       @shop = @shop.offset(params[:offset])
     end
+
+    @count = @shop.count()
+    @shop = @shop.limit(100)
 
     if @shop.nil?
       render :json => {
