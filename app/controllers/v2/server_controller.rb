@@ -13,29 +13,6 @@ class V2::ServerController < ApplicationController
   def game
     @servers = Server.select("*").joins("LEFT JOIN `servers_types` ON (`servers_types`.`server_type` = `servers`.`server_type`)")
 
-    @servers.each do |server|
-      server['mods'] = Mod.where("server_type = ?", server['server_type'])
-    end
-
-    render json: @servers
-  end
-
-  def game_dev
-    @servers = Server.select("*").joins("LEFT JOIN `servers_types_dev` ON (`servers_types_dev`.`server_type` = `servers`.`server_type`)")
-
-    @servers.each do |server|
-      server['mods'] = Mod.where("server_type = ?", server['server_type'])
-    end
-
-    render json: @servers
-  end
-
-  # GET /server/game/
-  # Информация о игровых серверах. Обновление информации о статусе и игроках
-  # происходит раз в минуту.
-  def game
-    @servers = Server.select("*").joins("LEFT JOIN `servers_types` ON (`servers_types`.`server_type` = `servers`.`server_type`)")
-
     render json: @servers
   end
 
