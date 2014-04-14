@@ -73,7 +73,7 @@ API для работы. OAuth позволяет получить прилож�
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /server/game/](docs/server.md#get-servergame) | Информация об игровых серверах. | - |
-| [GET /server/blacklist] (docs/server.md#get-servereblacklist) | Черный список предметов на сервере. | - |
+| [GET /server/blacklist](docs/server.md#get-serverblacklist) | Черный список предметов на сервере. | - |
 | [GET /server/bans/](docs/server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](docs/server.md#get-servernews) | Новости сервера. | - |
 | [GET /server/launcher/](docs/server.md#get-serverlauncher) | Версия лаунчера. | - |
