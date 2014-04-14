@@ -4,7 +4,7 @@
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /server/game/](server.md#get-servergame) | Информация об игровых серверах. | - |
-| [GET /server/blacklist](server.md#get-servereblacklist) | Черный список предметов на сервере. | - |
+| [GET /server/blacklist](server.md#get-serverblacklist) | Черный список предметов на сервере. | - |
 | [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](server.md#get-servernews) | Новости сервера. | - |
 | [GET /server/launcher/](server.md#get-serverlauncher) | Версия лаунчера. | - |
@@ -83,6 +83,7 @@ http://api.ensemplix.ru/v2/server/blacklist/
 | --------- | --------- |
 | id        | Уникальный идентификатор заблокированного предмета. |
 | item      | Заблокированный предмет. |
+| server    | Сервер на котором предмет заблокирован. |
 | created_at | Когда предмет был заблокирован. |
 
 # ``` GET /server/bans/ ``` 
