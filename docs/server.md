@@ -4,6 +4,7 @@
 | Метод | Описание | OA2 |
 | ----- | -------- |:---:|
 | [GET /server/game/](server.md#get-servergame) | Информация об игровых серверах. | - |
+| [GET /server/blacklist](server.md#get-servereblacklist) | Черный список предметов на сервере. | - |
 | [GET /server/bans/](server.md#get-serverbans) | Список забаненных игроков. | - |
 | [GET /server/news/](server.md#get-servernews) | Новости сервера. | - |
 | [GET /server/launcher/](server.md#get-serverlauncher) | Версия лаунчера. | - |
@@ -56,6 +57,33 @@ http://api.ensemplix.ru/v2/server/game/
 | server_version | Версия сервера. |
 | client_version | Версия клиента. |
 | download | Ссылка для скачивания клиента. |
+
+# ``` GET /server/blacklist/ ``` 
+Черный список предметов на сервере.
+
+### Параметры
+
+Параметры не нужны.
+
+### Пример запроса
+``` 
+http://api.ensemplix.ru/v2/server/blacklist/
+```
+### Пример ответа 
+```json
+{   
+    "id":3,
+    "item":"6933",
+    "server":"Amber",
+    "created_at":1397481118
+}
+```
+### Пояснение параметров ответа
+| Параметры | Пояснение |
+| --------- | --------- |
+| id        | Уникальный идентификатор заблокированного предмета. |
+| item      | Заблокированный предмет. |
+| created_at | Когда предмет был заблокирован. |
 
 # ``` GET /server/bans/ ``` 
 Список забаненных игроков на сервере.
