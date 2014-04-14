@@ -11,8 +11,40 @@ class V2::ServerController < ApplicationController
   # Информация о игровых серверах. Обновление информации о статусе и игроках
   # происходит раз в минуту.
   def game
-    @game = Server.select("*").joins("LEFT JOIN `servers_types` ON (`servers_types`.`server_type` = `servers`.`server_type`)")
-    render json: @game
+    @servers = Server.select("*").joins("LEFT JOIN `servers_types` ON (`servers_types`.`server_type` = `servers`.`server_type`)")
+
+    @servers.each do |server|
+      server['mods'] = Mod.where("server_type = ?", server['server_type'])
+    end
+
+    render json: @servers
+  end
+
+  def game_dev
+    @servers = Server.select("*").joins("LEFT JOIN `servers_types_dev` ON (`servers_types_dev`.`server_type` = `servers`.`server_type`)")
+
+    @servers.each do |server|
+      server['mods'] = Mod.where("server_type = ?", server['server_type'])
+    end
+
+    render json: @servers
+  end
+
+  # GET /server/game/
+  # Информация о игровых серверах. Обновление информации о статусе и игроках
+  # происходит раз в минуту.
+  def game
+    @servers = Server.select("*").joins("LEFT JOIN `servers_types` ON (`servers_types`.`server_type` = `servers`.`server_type`)")
+
+    render json: @servers
+  end
+
+  # GET /server/blacklist/
+  # Черный список предметов на сервере.
+  def blacklist
+    @blacklist = Blacklist.select("`id`,`item`,`server`, UNIX_TIMESTAMP(`created_at`) as `created_at`").all
+
+    render json: @blacklist
   end
 
   # GET /server/bundle/
