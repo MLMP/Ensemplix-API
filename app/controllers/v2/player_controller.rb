@@ -25,8 +25,8 @@ class V2::PlayerController < ApplicationController
     if @player.empty?
       render :json => {
           :error => "Player not found.",
-          :player => params[:player],
-      }
+          :player => params[:player]
+      }, :status => 422
       return;
     end
 
