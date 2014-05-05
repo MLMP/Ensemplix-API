@@ -39,6 +39,21 @@ http://api.ensemplix.ru/v2/server/game/
     "client_version":"1.1",
     "download":"http://96922.selcdn.ru/Ensemplix/old.zip"
 }
+
+
+{   "id":1,
+    "name":"Sandbox",
+    "players":57,
+    "maximum":100,
+    "online":true,
+    "ip":"sv1.ensemplix.ru",
+    "port":25565,
+    "server_type":"classic",
+    "border":null,
+    "world":"Sandbox",
+    "map":"http://map.ensemplix.ru",
+    "server_version":"1.6.4",
+    "client_version":"0.4"
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
@@ -51,12 +66,11 @@ http://api.ensemplix.ru/v2/server/game/
 | ip        | Адрес, на котором работает сервер. |
 | port      | Порт, на котором работает сервер. |
 | server_type | Тип сервера. |
+| border | Граница мира. | 
 | world | Основной мир на сервере. | 
 | map | Онлайн карта сервера. |
-| folder | Папка, в которой находится игровой клиент сервера. |
 | server_version | Версия сервера. |
 | client_version | Версия клиента. |
-| download | Ссылка для скачивания клиента. |
 
 # ``` GET /server/blacklist/ ``` 
 Черный список предметов на сервере.
