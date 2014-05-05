@@ -23,25 +23,8 @@ http://api.ensemplix.ru/v2/server/game/
 ```
 ### Пример ответа 
 ```json 
-{
+{   
     "id":1,
-    "name":"Sandbox",
-    "players":67,
-    "maximum":100,
-    "online":true,
-    "ip":"sv1.ensemplix.ru",
-    "port":25565,
-    "server_type":"classic",
-    "world":"Sandbox",
-    "map":"http://map.ensemplix.ru",
-    "folder":"old",
-    "server_version":"1.5.2",
-    "client_version":"1.1",
-    "download":"http://96922.selcdn.ru/Ensemplix/old.zip"
-}
-
-
-{   "id":1,
     "name":"Sandbox",
     "players":57,
     "maximum":100,
@@ -54,6 +37,7 @@ http://api.ensemplix.ru/v2/server/game/
     "map":"http://map.ensemplix.ru",
     "server_version":"1.6.4",
     "client_version":"0.4"
+}
 ```
 ### Пояснение параметров ответа
 | Параметры | Пояснение |
