@@ -118,8 +118,8 @@ class V2::RegionsController < ApplicationController
       @radius = 0        
     end
     
-    @regions = Region.where("min_x <= :x + 250 AND max_x > :x - 250 AND min_z < :z + 250 AND max_z > :z - 250
-         AND world = :world", x: params[:x], z: params[:z], world: params[:world])
+    @regions = Region.where("min_x <= :x + :radius AND max_x > :x - :radius AND min_z < :z + :radius AND max_z > :z - :radius
+         AND world = :world", x: params[:x], z: params[:z], radius: @radius, world: params[:world])
 
     @count = @regions.count()
     @regions = @regions.limit(100)
@@ -133,6 +133,7 @@ class V2::RegionsController < ApplicationController
           :error => "No regions found.",
           :x => params[:x],
           :z => params[:z],
+		  :radius => @radius,
           :world => params[:world],
           :offset => params[:offset]
       }, :status => 422
@@ -159,6 +160,8 @@ class V2::RegionsController < ApplicationController
         :regions => @regions,
         :x => params[:x],
         :z => params[:z],
+        :radius => @radius,
+        :world => params[:world],
         :count => @count,
         :offset => params[:offset],
     }
