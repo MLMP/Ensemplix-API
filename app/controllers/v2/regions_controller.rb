@@ -10,7 +10,6 @@ class V2::RegionsController < ApplicationController
       @regions = @regions.offset(params[:offset])
     end
 
-
     if @regions.empty?
       render :json => {
           :error => "Regions not found.",
@@ -104,7 +103,21 @@ class V2::RegionsController < ApplicationController
       render json: {error: "Please provide world."}, :status => 422
       return;
     end
-
+    
+    @radius = 250;
+    
+    if params.has_key? :radius
+      @radius = params[:radius].to_i
+    end
+    
+    if @radius > 250
+      @radius = 250        
+    end
+    
+    if @radius < 0
+      @radius = 0        
+    end
+    
     @regions = Region.where("min_x <= :x + 250 AND max_x > :x - 250 AND min_z < :z + 250 AND max_z > :z - 250
          AND world = :world", x: params[:x], z: params[:z], world: params[:world])
 
