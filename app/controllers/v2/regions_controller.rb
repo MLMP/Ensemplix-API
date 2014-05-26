@@ -121,9 +121,6 @@ class V2::RegionsController < ApplicationController
     @regions = Region.where("min_x <= :x + :radius AND max_x > :x - :radius AND min_z < :z + :radius AND max_z > :z - :radius
          AND world = :world", x: params[:x], z: params[:z], radius: @radius, world: params[:world])
 
-    @count = @regions.count()
-    @regions = @regions.limit(100)
-
     if params.has_key? :offset
       @regions = @regions.offset(params[:offset])
     end
@@ -139,6 +136,9 @@ class V2::RegionsController < ApplicationController
       }, :status => 422
       return;
     end
+
+    @count = @regions.count()
+    @regions = @regions.limit(100)
 
     @regions.each do |region|
       region_name = region['region']
