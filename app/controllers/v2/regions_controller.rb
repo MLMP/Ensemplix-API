@@ -77,7 +77,16 @@ class V2::RegionsController < ApplicationController
     @parent = Child.select("parent").where("child = ? AND world = ?", params[:region], params[:world]).take()
 
     render :json => {
-        :region => @region,
+        :region => @region['region'],
+        :min_x => @region['min_x'],
+        :min_y => @region['min_y'],
+        :min_z => @region['min_z'],
+        :max_x => @region['max_x'],
+        :max_y => @region['max_y'],
+        :max_z => @region['max_z'],
+        :priority => @region['priority'],
+        :world => @region['world'],
+        :created => @region['created'],
         :owners => @owners,
         :members => @members,
         :flags => @flags,
