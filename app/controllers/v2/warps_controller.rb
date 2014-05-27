@@ -68,7 +68,7 @@ class V2::WarpsController < ApplicationController
       return;
     end
 
-    @warps = Warp.where("x < :x AND x > :x - 250 AND z < :z + 250 AND z > :z - 250 AND world = :world",
+    @warps = Warp.where("x > :x -250 AND x < :x + 250 AND z > :z -250 AND z < :z + 250 AND world = :world",
                         x: params[:x], z: params[:z], world: params[:world])
 
     if params.has_key? :offset
