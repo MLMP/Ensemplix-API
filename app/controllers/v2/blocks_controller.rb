@@ -8,6 +8,7 @@ class V2::BlocksController < ApplicationController
     @blocks = @blocks.where("type = ?", params[:type]) if params.has_key? :type
     @blocks = @blocks.where("block = ?", params[:id]) if params.has_key? :id
     @blocks = @blocks.where("data = ?", params[:data]) if params.has_key? :data
+    @blocks = @blocks.where("hide = '0'")
     @blocks = @blocks.order("id DESC")
 
     if params.has_key? :offset
@@ -64,6 +65,7 @@ class V2::BlocksController < ApplicationController
     @blocks = @blocks.where("data = ?", params[:data]) if params.has_key? :data
     @blocks = @blocks.where("world = ?", params[:world])
     @blocks = @blocks.where("type = ?", params[:type]) if params.has_key? :type
+    @blocks = @blocks.where("hide = '0'")
     @blocks = @blocks.order("id DESC")
 
     if params.has_key? :offset
@@ -116,6 +118,7 @@ class V2::BlocksController < ApplicationController
     @blocks = @blocks.where("type = ?", params[:type]) if params.has_key? :type
     @blocks = @blocks.where("block = ?", params[:id]) if params.has_key? :id
     @blocks = @blocks.where("data = ?", params[:data]) if params.has_key? :data
+    @blocks = @blocks.where("hide = '0'")
     @blocks = @blocks.order("id DESC")
 
     if params.has_key? :offset
