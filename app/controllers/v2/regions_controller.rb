@@ -35,6 +35,15 @@ class V2::RegionsController < ApplicationController
       else
         region['parent'] = nil
       end
+
+      if world.eql?("CarnageR5")
+        region['min_x'] = nil
+        region['min_y'] = nil
+        region['min_z'] = nil
+        region['max_x'] = nil
+        region['max_y'] = nil
+        region['max_z'] = nil
+      end
     end
 
     render :json => {
@@ -68,6 +77,15 @@ class V2::RegionsController < ApplicationController
           :world => params[:world]
       }, :status => 422
       return;
+    end
+
+    if region['world'].eql?("CarnageR5")
+        region['min_x'] = nil
+        region['min_y'] = nil
+        region['min_z'] = nil
+        region['max_x'] = nil
+        region['max_y'] = nil
+        region['max_z'] = nil
     end
 
     @owners = Owner.where("region = ? AND world = ?", params[:region], params[:world]).pluck("player")
@@ -163,6 +181,15 @@ class V2::RegionsController < ApplicationController
       else
         region['parent'] = nil
       end
+
+      if world.eql?("CarnageR5")
+        region['min_x'] = nil
+        region['min_y'] = nil
+        region['min_z'] = nil
+        region['max_x'] = nil
+        region['max_y'] = nil
+        region['max_z'] = nil
+      end
     end
 
     render :json => {
@@ -234,6 +261,15 @@ class V2::RegionsController < ApplicationController
         region['parent'] = parent['parent']
       else
         region['parent'] = nil
+      end
+
+      if world.eql?("CarnageR5")
+        region['min_x'] = nil
+        region['min_y'] = nil
+        region['min_z'] = nil
+        region['max_x'] = nil
+        region['max_y'] = nil
+        region['max_z'] = nil
       end
     end
 
